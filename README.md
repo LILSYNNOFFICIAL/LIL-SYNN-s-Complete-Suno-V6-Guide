@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 # 🎵 LIL SYNN's Complete Suno V6 Guide
 
 <p align="center">
@@ -22,6 +24,7 @@ This is not a basic “how to make a song” tutorial.
 It is a **complete working reference for the current Suno V6 ecosystem**: what the tools are, where they live, what they are good for, how they interact, how to troubleshoot them, how to test them scientifically, and where the boundaries of the evidence are.
 
 The central philosophy is simple:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 IDEA
@@ -105,6 +108,7 @@ Suno currently describes V6 as its flagship model, V6-WILD as the experimental/l
 - [Master Workflow](#-master-workflow)
 - [Official Resource Library](#-official-resource-library)
 - [Accuracy Policy](#-accuracy-policy)
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ## Deep-Dive Expansion Files
 
@@ -135,6 +139,7 @@ It does **not** mean inventing undocumented secret commands or pretending a luck
 3. EXPERIENCED COMMUNITY REPORTS
 4. OLD TUTORIALS / SCREENSHOTS / MEMORY
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Evidence labels used throughout the repository:
 
@@ -171,6 +176,7 @@ Execute it with control.
 Surprise me.
 Give me ideas I would not have designed myself.
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### V6-MINI mental model
 
@@ -225,6 +231,7 @@ STUDIO 2.0
 ↓
 EXPORT
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Each layer solves a different class of problem. Use the smallest layer capable of fixing the problem.
 
@@ -243,6 +250,7 @@ Dark emotional electropop about realizing you were the problem in a relationship
 ```
 
 ### Custom Mode
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Use when you need explicit control over lyrics, Style, structure, vocal direction and testing variables.
 
@@ -285,6 +293,7 @@ Production-oriented section direction can combine structure with performance/arr
 [Bridge | contrasting harmony | reduced drums | exposed vocal]
 [Final Chorus | expanded harmonies | maximum emotional lift]
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 **Important:** bracket syntax is guidance, not a guaranteed programming language. Suno may interpret, reinterpret, ignore, or occasionally vocalize descriptive text.
 
@@ -327,6 +336,7 @@ PRIMARY GENRE
 ```
 
 ### Master Style template
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 Primary identity: [genre + subgenre + production family].
@@ -374,6 +384,7 @@ Protect information in this order when shortening a prompt:
 8. MIX
 9. MASTER
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Remove redundancy before removing identity.
 
@@ -412,6 +423,7 @@ Useful section labels include:
 [End]
 [Fade Out]
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Performance vocabulary can include:
 
@@ -451,6 +463,7 @@ Suno documents Weirdness as Safe → Chaos with 50% as the normal expected resul
 Change one slider at a time when learning its effect. Keep model, lyrics, references and prompt fixed.
 
 ### Controlled final
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 Weirdness: low → moderate
@@ -480,6 +493,7 @@ Reference = what source material should influence it
 Slider    = how strongly / variably it should explore
 Max Mode  = extra effort for difficult fidelity/consistency tasks
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Suno recommends Max Mode for longer songs, close covers, style transfer, and maintaining vocal/style consistency. It costs more credits. citeturn0search7
 
@@ -499,6 +513,7 @@ V6 supports creation workflows using combinations of:
 - video
 
 Suno explicitly describes multimodal V6 creation and role-based reference use. citeturn0search0
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Role-based reference prompting
 
@@ -520,6 +535,7 @@ Use Audio Uploads for demos, musical references, performances, source material, 
 Current Suno documentation distinguishes short uploads on free/basic access from longer uploads for Pro/Premier; current V6 workflows can work with audio references and Audio Influence. Verify the current upload limit in the live help page before relying on a duration limit because this is a product-controlled value.
 
 Best source:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 clean recording
@@ -540,6 +556,7 @@ clear creative role
 Voices lets creators use a recorded/uploaded voice in Suno songs. Suno recommends clean/acapella source material for best results, while background music can also be supplied and isolated. Voices is available on iOS and Android and can be tried on free plans, with additional functionality on paid plans. citeturn0search1
 
 ### Voice workflow
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 Clean recording
@@ -566,6 +583,7 @@ Current documentation says Pro/Premier users can create up to **three private Cu
 ### Training-set discipline
 
 For a coherent model, use material with consistent:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 - vocal identity
 - genre family
@@ -581,6 +599,7 @@ Do not mix unrelated catalogs and then expect a tightly defined sonic identity.
 # 🧠 MY TASTE
 
 My Taste learns preferences such as genres, moods and references and can personalize creation through the Magic Wand/Style Augmentation workflow.
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 For controlled experiments, document whether personalization is enabled. Personalization can be a hidden variable if you are trying to determine whether a prompt change caused an output change.
 
@@ -591,6 +610,7 @@ For controlled experiments, document whether personalization is enabled. Persona
 Inspire uses a playlist as a creative springboard for a new song.
 
 Best practice:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 Short focused playlist
@@ -611,6 +631,7 @@ A focused playlist of a few relevant songs is generally easier to reason about t
 Suno Sounds generates individual audio material such as one-shots, loops, samples, effects and ambient sounds. Loop workflows can include key/BPM information. It is a separate sound-generation surface from full-song generation.
 
 Use it for:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 - percussion layers
 - transitions
@@ -632,6 +653,7 @@ Use a selected musical moment as the starting point for a new creation. This is 
 ### Mashup
 
 Assign explicit roles to multiple sources:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 SOURCE A → vocal identity
@@ -663,6 +685,7 @@ Remove unwanted beginning/end material without regenerating the entire song.
 Use when one section is wrong while the surrounding song is valuable. The original can remain recoverable through take-lane/undo workflows in Studio.
 
 ### Reuse Prompt
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Reuse an existing generation setup, then change one variable to create controlled alternatives.
 
@@ -696,6 +719,7 @@ Change only the word “love” to “light” in the second chorus.
 ```text
 Keep the existing vocal and arrangement. Replace only the bridge with a darker harmonic section.
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 Keep the chorus unchanged. Make Verse 2 more intimate and sparse.
@@ -724,6 +748,7 @@ Evaluate phrasing + identity
 ↓
 Edit / stem-process
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Use it when the instrumental is already worth preserving and only the vocal layer needs work.
 
@@ -734,6 +759,7 @@ Use it when the instrumental is already worth preserving and only the vocal laye
 Remaster is for **subtle refinement**, not radical songwriting changes.
 
 Current documented variation choices are:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 Subtle  → closest to original
@@ -770,6 +796,7 @@ From Studio:
 ```text
 Right-click audio clip → Split Stems → choose split → Extract
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 citeturn2search4
 
@@ -806,6 +833,7 @@ Studio 2.0 is Suno's browser-based generative DAW and is available to Premier su
 - Minimum hardware: CPU with SSE4.1 or Neon SIMD support and at least 4 GB RAM. citeturn2search9
 
 ### Studio mental model
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 Suno generation
@@ -834,6 +862,7 @@ The Chat Bar is the natural-language production layer inside Studio. It can gene
 A September 2026 Studio update made the Chat Bar BPM-aware, improved reliability, added undo for prompt edits, and improved plugin duplication/movement. citeturn0search2
 
 ### Strong prompt
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 On the vocal track, reduce harsh high-mid character, keep the vocal forward, preserve the existing dynamics, and do not change the drums or bass.
@@ -857,6 +886,7 @@ VELOCITY
 PITCH
 INSTRUMENT
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Audio → MIDI
 
@@ -882,6 +912,7 @@ Use the built-in wavetable synth for:
 - plucks
 - chords
 - evolving textures
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Studio's September update also improved high-frequency wavetable fidelity and reduced aliasing. citeturn0search2
 
@@ -908,6 +939,7 @@ Built-in effects include:
 Studio does **not** host conventional VST or Audio Unit plugins. Instead, custom plugins can be designed through the Chat Bar. citeturn2search9
 
 Custom plugins can support presets, automation and MIDI Learn. citeturn2search9
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Plugin management
 
@@ -933,6 +965,7 @@ Automation can control track parameters such as:
 - filter movement
 - reverb/delay behavior
 - effect intensity
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 MIDI Learn can map compatible hardware controls to Studio parameters. citeturn2search9
 
@@ -961,6 +994,7 @@ Promote/Commit best take
 ↓
 Keep original recoverable
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Suno documents keyboard access to the Take Lanes view and a non-destructive commit workflow. citeturn2search2
 
@@ -985,6 +1019,7 @@ The Library organizes songs and provides filters, playlists and Hooks. cite�
 ### Workspaces
 
 Workspaces organize songs/edits while creating. They are especially useful for separating Extend branches, experiments and project variants. citeturn2search6
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Studio Library
 
@@ -1003,6 +1038,7 @@ Current Studio export options include:
 - Multitrack
 - Individual clip WAV
 - MIDI extracted from supported stems
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 All Studio audio exports are high-quality WAV. Exporting MIDI from a stem currently costs **10 credits**. citeturn2search7
 
@@ -1033,6 +1069,7 @@ four-on-the-floor • half-time • syncopated • swung • humanized • mecha
 sub-heavy • round • controlled • growling • clean • saturated
 sidechain-pumped • short • sustained • mid-bass focused
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Synths
 
@@ -1073,6 +1110,7 @@ register
 ```
 
 Example:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 Low-register male lead vocal, mature emotional character, slightly husky texture, intimate close-mic verses, restrained intensity, stronger chest voice in choruses, natural conversational phrasing, selective stacked harmonies, centered and forward without excessive brightness.
@@ -1101,6 +1139,7 @@ Sparse piano-led verse
 → reduced bridge
 → expanded final chorus
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 The arrangement should explain where energy enters, peaks, retreats and resolves.
 
@@ -1122,6 +1161,7 @@ Listen for:
 - unnatural vocal phrasing
 - transitions
 - ending quality
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Loudness ≠ quality
 
@@ -1144,6 +1184,7 @@ chorus descriptors
 references
 model
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 But remember:
 
@@ -1174,6 +1215,7 @@ Change one major variable per test.
 
 ### Fixing arrangement with mastering language
 Fix the arrangement.
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Fixing lyrics with production
 Edit the lyrics.
@@ -1221,6 +1263,7 @@ WHAT WORKED
 WHAT FAILED
 NEXT TEST
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Generative variance means one successful output does not prove causation.
 
@@ -1257,6 +1300,7 @@ MIX → stems / Studio / DAW
 SONIC FINISH → Remaster / Studio
 WHOLE SONG → regenerate
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 This is one of the guide's foundational rules:
 
@@ -1295,6 +1339,7 @@ Compare
 ↓
 Edit / stems / Studio
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Useful diagnostic prompt:
 
@@ -1330,6 +1375,7 @@ Dark emotional electropop, intimate expressive male lead vocal, warm analog poly
 ```text
 Intimate nocturnal indie pop, close expressive lead vocal, warm electric piano, soft analog synth pads, round bass, understated electronic percussion, sparse verses, subtle stereo movement, natural phrasing, gradual dynamic growth, minimal reverb, clear midrange, controlled low end.
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Synthwave
 
@@ -1360,6 +1406,7 @@ Monthly paid download allowances reset on the billing date and unused downloads 
 Suno says existing songs remain playable/shareable in the platform; download limits are distinct from listening/sharing. citeturn2search3
 
 ### Generation credits ≠ downloads
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 GENERATION CREDITS
@@ -1393,6 +1440,7 @@ Recent/current ecosystem features include:
 - iMessage keyboard creation/sharing on iOS.
 - Android Auto / CarPlay integration.
 - Hooks for short-form music-video pairing.
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Suno's release notes are the authoritative place for rollout status because mobile features can arrive at different times on iOS, Android and web. citeturn0search1
 
@@ -1415,6 +1463,7 @@ Suno may moderate generated or submitted material. Uploaded audio/lyrics can als
 Do not design workflows around attempts to bypass moderation or rights protections.
 
 When a source is important to a project, keep a record of:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 SOURCE
@@ -1443,6 +1492,7 @@ production
 mixing
 mastering
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 The glossary is a vocabulary aid, not a list of guaranteed prompt commands.
 
@@ -1457,6 +1507,7 @@ The glossary is a vocabulary aid, not a list of guaranteed prompt commands.
 | Metronome | `Shift-C` |
 | Loop | `Cmd-L` |
 | Solo for timing checks | `Shift-S` |
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 Studio also uses number-key toggles for major panels such as Take Lanes and Library in current workflows; exact shortcuts can change, so verify the live Studio shortcut reference before relying on them.
 
@@ -1495,6 +1546,7 @@ Simplify.
 ```
 
 ### Chorus changes too much
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ```text
 Keep lyrics identical.
@@ -1564,6 +1616,7 @@ Turn on the metronome, solo the relevant instrument, inspect the timeline and ch
 29. EXPORT
 30. VERIFY RIGHTS / METADATA / FINAL FILES
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ---
 
@@ -1595,6 +1648,7 @@ CHANGE MADE:
 RESULT:
 NEXT TEST:
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ---
 
@@ -1618,6 +1672,7 @@ NEXT TEST:
 - urlSuno Soundshttps://help.suno.com/en/articles/10625537
 
 ### Editing / Production
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 - urlStudio 2.0https://help.suno.com/en/articles/13670529
 - urlStudio 2.0 Help Categoryhttps://help.suno.com/en/categories/2701953-studio-2-0
@@ -1652,6 +1707,7 @@ Major lyric/editor improvements, cover-art iteration and other creation-surface 
 Studio 2.0 launched with MIDI, effects, wavetable synthesis, automation, Chat Bar, custom plugins and improved production workflows. Voices expanded to iOS/Android. Playlist and mobile improvements continued. citeturn0search1turn0search13
 
 ### September 2026
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 V6 launched on September 9, with:
 
@@ -1678,6 +1734,7 @@ This repository will never present these as facts without evidence:
 - copyright protection simply because Suno grants commercial-use rights
 - permission to clone another person's voice simply because the feature technically allows voice input
 - old tutorials as current truth
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 The guide separates:
 
@@ -1706,6 +1763,7 @@ RETIRED
 10. **Do not confuse probabilistic generation with deterministic programming.**
 11. **Document experiments.**
 12. **When official documentation changes, the guide changes.**
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ---
 
@@ -1731,6 +1789,7 @@ COMMUNITY OBSERVATIONS
 TESTING METHOD
 DATE VERIFIED
 ```
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 When Suno changes a feature, update the old description instead of allowing contradictory versions to accumulate.
 
@@ -1743,6 +1802,7 @@ Suno is an evolving product. UI labels, feature availability, plan restrictions,
 **Official Suno documentation and release notes are the live authority.**
 
 This repository intentionally distinguishes:
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 - officially documented behavior
 - directly observed/reproducible behavior
