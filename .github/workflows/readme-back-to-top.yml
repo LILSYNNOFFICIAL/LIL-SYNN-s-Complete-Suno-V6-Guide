@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - README.md
+      - SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md
       - .github/workflows/readme-back-to-top.yml
 
 permissions:
@@ -18,6 +19,42 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Clean citation markup and add upgrade navigation
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          path = Path('README.md')
+          text = path.read_text(encoding='utf-8')
+
+          # ChatGPT citation syntax is not GitHub Markdown. Convert URL cards to
+          # ordinary Markdown links and remove citation-only tokens.
+          text = re.sub(
+              r'url([^]+)(https?://[^]+)',
+              lambda m: f'[{m.group(1)}]({m.group(2)})',
+              text,
+          )
+          text = re.sub(r'cite[^]+', '', text)
+          text = re.sub(r'\n{3,}', '\n\n', text)
+
+          addendum_path = 'SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md'
+          addendum_line = f'- **[{addendum_path}]({addendum_path})** — the 2026 ultimate control, testing, Studio 2.0, diagnostic, rights, platform and Creator\'s Operating System addendum.'
+
+          if addendum_line not in text:
+              marker = '## Deep-Dive Expansion Files'
+              if marker in text:
+                  text = text.replace(marker, marker + '\n\n' + addendum_line, 1)
+              else:
+                  text += f'\n\n## 🧩 2026 Ultimate Upgrade\n\n{addendum_line}\n'
+
+          quick_nav_marker = '- [Accuracy Policy](#-accuracy-policy)'
+          quick_nav_upgrade = '- [2026 Ultimate Control & Production Addendum](#-2026-ultimate-control--production-addendum)'
+          if quick_nav_marker in text and quick_nav_upgrade not in text:
+              text = text.replace(quick_nav_marker, quick_nav_upgrade + '\n' + quick_nav_marker, 1)
+
+          path.write_text(text.rstrip() + '\n', encoding='utf-8')
 
       - name: Insert section back-to-top links
         shell: python
@@ -52,7 +89,6 @@ jobs:
               if not in_fence and line.startswith('# ') and not line.startswith('# 🎵'):
                   sections.append(i)
 
-          # Process from bottom to top so indexes remain valid.
           insertions = []
           for n, start in enumerate(sections):
               end = sections[n + 1] if n + 1 < len(sections) else len(lines)
@@ -60,8 +96,6 @@ jobs:
               if any('href="#top"' in x or '](#top)' in x for x in block):
                   continue
 
-              # Find a natural paragraph boundary near the middle of the section,
-              # avoiding fenced code blocks.
               midpoint = start + max(1, (end - start) // 2)
               candidates = []
               in_block_fence = False
@@ -73,11 +107,7 @@ jobs:
                   if not in_block_fence and not s and i > start + 2:
                       candidates.append(i)
 
-              if candidates:
-                  insert_at = min(candidates, key=lambda x: abs(x - midpoint))
-              else:
-                  insert_at = midpoint
-
+              insert_at = min(candidates, key=lambda x: abs(x - midpoint)) if candidates else midpoint
               link = '<div align="right"><a href="#top">⬆️ Back to top</a></div>'
               insertions.append((insert_at, link))
 
@@ -90,11 +120,11 @@ jobs:
         shell: bash
         run: |
           if git diff --quiet -- README.md; then
-            echo "README already has complete back-to-top navigation."
+            echo "README already has complete navigation and clean Markdown links."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Add back-to-top navigation to README [skip ci]"
+          git commit -m "Maintain README navigation and GitHub links [skip ci]"
           git push
