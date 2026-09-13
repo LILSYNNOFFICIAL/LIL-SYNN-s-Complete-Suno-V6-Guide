@@ -52,7 +52,7 @@ EXPORT
 
 **Do not regenerate a great song to solve a problem that can be fixed locally. Preserve good information; repair bad information locally.**
 
-Suno currently describes V6 as its flagship model, V6-WILD as the experimental/less predictable variant, and V6-MINI as the faster version available to all users. All three support up to eight minutes per generation. urlSuno Current Modelshttps://help.suno.com/en/articles/13924737
+Suno currently describes V6 as its flagship model, V6-WILD as the experimental/less predictable variant, and V6-MINI as the faster version available to all users. All three support up to eight minutes per generation. [Suno Current Models](https://help.suno.com/en/articles/13924737)
 
 ---
 
@@ -107,10 +107,13 @@ Suno currently describes V6 as its flagship model, V6-WILD as the experimental/l
 - [Troubleshooting](#-troubleshooting)
 - [Master Workflow](#-master-workflow)
 - [Official Resource Library](#-official-resource-library)
+- [2026 Ultimate Control & Production Addendum](#-2026-ultimate-control--production-addendum)
 - [Accuracy Policy](#-accuracy-policy)
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ## Deep-Dive Expansion Files
+
+- **[SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md](SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md)** — the 2026 ultimate control, testing, Studio 2.0, diagnostic, rights, platform and Creator's Operating System addendum.
 
 - **[SUNO-V6-EVERYTHING-EXPANSION.md](SUNO-V6-EVERYTHING-EXPANSION.md)** — broad V6 controls, prompting, production, testing, rights, workflows, limitations and community techniques.
 - **[SUNO-V6-FINAL-CURRENT-EXPANSION.md](SUNO-V6-FINAL-CURRENT-EXPANSION.md)** — current model, multimodal, Studio, mobile, playlist, stems, visual and release-note coverage.
@@ -161,7 +164,7 @@ Evidence labels used throughout the repository:
 | **V6-WILD** | Discovery / experimentation | More varied, surprising, unconventional | Pro / Premier |
 | **V6-MINI** | Fast iteration / idea testing | Faster, efficient V6 experience | All users |
 
-All three current V6-family variants support up to **8 minutes per generation**. citeturn0search4
+All three current V6-family variants support up to **8 minutes per generation**. 
 
 ### V6 mental model
 
@@ -196,7 +199,7 @@ V6 → controlled refinement
 Edit → Stems → Studio 2.0 → final production
 ```
 
-Suno's model picker is in the top-right of the Create form and stays selected until changed. Custom Models can also appear there for eligible users. citeturn0search6
+Suno's model picker is in the top-right of the Create form and stays selected until changed. Custom Models can also appear there for eligible users. 
 
 ---
 
@@ -456,7 +459,7 @@ Current documented controls include:
 | **Audio Influence** | Appears with Audio Upload workflows and controls source-audio influence. |
 | **Variety** | Current V6 behavior can modify/update style prompts to introduce variation. Variety 0 is useful when you need supplied style tags preserved. |
 
-Suno documents Weirdness as Safe → Chaos with 50% as the normal expected result, and Style Influence as Loose → Strong. citehttps://help.suno.com/en/articles/6141377
+Suno documents Weirdness as Safe → Chaos with 50% as the normal expected result, and Style Influence as Loose → Strong. 
 
 ### Testing rule
 
@@ -495,7 +498,7 @@ Max Mode  = extra effort for difficult fidelity/consistency tasks
 ```
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
-Suno recommends Max Mode for longer songs, close covers, style transfer, and maintaining vocal/style consistency. It costs more credits. citeturn0search7
+Suno recommends Max Mode for longer songs, close covers, style transfer, and maintaining vocal/style consistency. It costs more credits. 
 
 Do not use Max Mode as a substitute for a bad prompt or poor source material.
 
@@ -512,7 +515,7 @@ V6 supports creation workflows using combinations of:
 - images
 - video
 
-Suno explicitly describes multimodal V6 creation and role-based reference use. citeturn0search0
+Suno explicitly describes multimodal V6 creation and role-based reference use. 
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Role-based reference prompting
@@ -553,7 +556,7 @@ clear creative role
 
 # 🎤 VOICES
 
-Voices lets creators use a recorded/uploaded voice in Suno songs. Suno recommends clean/acapella source material for best results, while background music can also be supplied and isolated. Voices is available on iOS and Android and can be tried on free plans, with additional functionality on paid plans. citeturn0search1
+Voices lets creators use a recorded/uploaded voice in Suno songs. Suno recommends clean/acapella source material for best results, while background music can also be supplied and isolated. Voices is available on iOS and Android and can be tried on free plans, with additional functionality on paid plans. 
 
 ### Voice workflow
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
@@ -578,7 +581,7 @@ Only use voices you have permission to use. Technical capability does not establ
 
 # 🧠 CUSTOM MODELS
 
-Current documentation says Pro/Premier users can create up to **three private Custom Models** using at least **six songs**. Bulk upload is supported; training takes roughly 2–5 minutes; uploaded songs must be ones you have rights to; custom models are private. citeturn0search6
+Current documentation says Pro/Premier users can create up to **three private Custom Models** using at least **six songs**. Bulk upload is supported; training takes roughly 2–5 minutes; uploaded songs must be ones you have rights to; custom models are private. 
 
 ### Training-set discipline
 
@@ -662,7 +665,7 @@ SOURCE C → harmonic/synth palette
 NEW SONG → original arrangement / lyrics
 ```
 
-V6 officially supports multi-source mashups and sample/isolate workflows. citeturn0search0
+V6 officially supports multi-source mashups and sample/isolate workflows. 
 
 ---
 
@@ -708,7 +711,7 @@ BAD WHOLE SONG → regenerate
 
 # ✏️ SONG EDITOR / NATURAL-LANGUAGE EDITING
 
-V6 supports natural-language localized editing and single-lyric changes. citeturn0search0
+V6 supports natural-language localized editing and single-lyric changes. 
 
 Examples:
 
@@ -781,7 +784,7 @@ Current extraction modes:
 | **Split from Mix** | One selected instrument/voice + complement | Pro / Premier | 10 credits/stem |
 | **Advanced Split** | Select from nearly 100 instruments | Premier | 10 credits/stem |
 
-These costs are currently documented by Suno. citeturn2search4
+These costs are currently documented by Suno. 
 
 ### Where to get stems
 
@@ -797,8 +800,6 @@ From Studio:
 Right-click audio clip → Split Stems → choose split → Extract
 ```
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
-
-citeturn2search4
 
 ### Stem rescue
 
@@ -822,7 +823,7 @@ EXPORT
 
 # 🎛️ STUDIO 2.0
 
-Studio 2.0 is Suno's browser-based generative DAW and is available to Premier subscribers. It adds a production environment around generation: automation, effects, MIDI, wavetable synthesis, custom plugins, recording, stems and Chat Bar workflows. citeturn2search9
+Studio 2.0 is Suno's browser-based generative DAW and is available to Premier subscribers. It adds a production environment around generation: automation, effects, MIDI, wavetable synthesis, custom plugins, recording, stems and Chat Bar workflows. 
 
 ### Current environment
 
@@ -830,7 +831,7 @@ Studio 2.0 is Suno's browser-based generative DAW and is available to Premier su
 - Mobile devices are not supported for Studio.
 - Chrome is recommended.
 - Safari Web MIDI is not supported.
-- Minimum hardware: CPU with SSE4.1 or Neon SIMD support and at least 4 GB RAM. citeturn2search9
+- Minimum hardware: CPU with SSE4.1 or Neon SIMD support and at least 4 GB RAM. 
 
 ### Studio mental model
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
@@ -857,9 +858,9 @@ Export
 
 # 💬 STUDIO CHAT
 
-The Chat Bar is the natural-language production layer inside Studio. It can generate audio/MIDI, arrange, create plugins, design synth presets and make project changes. citeturn2search9
+The Chat Bar is the natural-language production layer inside Studio. It can generate audio/MIDI, arrange, create plugins, design synth presets and make project changes. 
 
-A September 2026 Studio update made the Chat Bar BPM-aware, improved reliability, added undo for prompt edits, and improved plugin duplication/movement. citeturn0search2
+A September 2026 Studio update made the Chat Bar BPM-aware, improved reliability, added undo for prompt edits, and improved plugin duplication/movement. 
 
 ### Strong prompt
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
@@ -874,7 +875,7 @@ The more specific the requested scope, the easier it is to protect unrelated par
 
 # 🎹 STUDIO MIDI
 
-Studio 2.0 supports MIDI tracks, piano-roll editing, musical typing, external MIDI input and audio↔MIDI workflows. citeturn2search9
+Studio 2.0 supports MIDI tracks, piano-roll editing, musical typing, external MIDI input and audio↔MIDI workflows. 
 
 MIDI lets you edit:
 
@@ -898,7 +899,7 @@ Use MIDI as the musical instruction for generated/Studio audio creation.
 
 ### Musical typing
 
-The computer keyboard can act as a MIDI controller; Studio also provides chord modes and an arpeggiator. citeturn2search9
+The computer keyboard can act as a MIDI controller; Studio also provides chord modes and an arpeggiator. 
 
 ---
 
@@ -914,7 +915,7 @@ Use the built-in wavetable synth for:
 - evolving textures
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
-Studio's September update also improved high-frequency wavetable fidelity and reduced aliasing. citeturn0search2
+Studio's September update also improved high-frequency wavetable fidelity and reduced aliasing. 
 
 Describe sound in behavior, not adjectives:
 
@@ -936,9 +937,9 @@ Built-in effects include:
 - Gate
 - Reverb
 
-Studio does **not** host conventional VST or Audio Unit plugins. Instead, custom plugins can be designed through the Chat Bar. citeturn2search9
+Studio does **not** host conventional VST or Audio Unit plugins. Instead, custom plugins can be designed through the Chat Bar. 
 
-Custom plugins can support presets, automation and MIDI Learn. citeturn2search9
+Custom plugins can support presets, automation and MIDI Learn. 
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Plugin management
@@ -950,8 +951,6 @@ Drag/drop → move/copy between tracks
 Cmd-D / Ctrl-D → duplicate plugin on same track
 Option-drag → duplicate across tracks
 ```
-
-citeturn0search2
 
 ---
 
@@ -967,7 +966,7 @@ Automation can control track parameters such as:
 - effect intensity
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
-MIDI Learn can map compatible hardware controls to Studio parameters. citeturn2search9
+MIDI Learn can map compatible hardware controls to Studio parameters. 
 
 Automation is the right tool when a sound should **change over time** rather than remain permanently altered.
 
@@ -975,7 +974,7 @@ Automation is the right tool when a sound should **change over time** rather tha
 
 # 🎛️ RECORDING / EDITING / TAKE LANES
 
-Every generation produces two versions. Take Lanes let you audition, rate and promote the strongest version without immediately destroying the alternatives. citeturn2search2
+Every generation produces two versions. Take Lanes let you audition, rate and promote the strongest version without immediately destroying the alternatives. 
 
 Take Lanes can also preserve the original when using Replace Section.
 
@@ -996,17 +995,17 @@ Keep original recoverable
 ```
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
-Suno documents keyboard access to the Take Lanes view and a non-destructive commit workflow. citeturn2search2
+Suno documents keyboard access to the Take Lanes view and a non-destructive commit workflow. 
 
 ### Remove FX / Get Dry
 
-Studio's Remove FX uses AI to strip baked-in reverb, delay and other effects, creating a dry version as a new take lane. citeturn2search0
+Studio's Remove FX uses AI to strip baked-in reverb, delay and other effects, creating a dry version as a new take lane. 
 
 Use this when you want to rebuild the effect chain yourself rather than processing an already-wet recording.
 
 ### Timing / time signature
 
-Studio includes project tempo and time-signature controls. Earlier Studio 1.2 introduced Warp Markers and additional time-signature support; treat these as production tools for timing correction and meter setup rather than generation prompts. citeturn2search1
+Studio includes project tempo and time-signature controls. Earlier Studio 1.2 introduced Warp Markers and additional time-signature support; treat these as production tools for timing correction and meter setup rather than generation prompts. 
 
 ---
 
@@ -1014,18 +1013,18 @@ Studio includes project tempo and time-signature controls. Earlier Studio 1.2 in
 
 ### Library
 
-The Library organizes songs and provides filters, playlists and Hooks. citeturn2search11
+The Library organizes songs and provides filters, playlists and Hooks. 
 
 ### Workspaces
 
-Workspaces organize songs/edits while creating. They are especially useful for separating Extend branches, experiments and project variants. citeturn2search6
+Workspaces organize songs/edits while creating. They are especially useful for separating Extend branches, experiments and project variants. 
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
 ### Studio Library
 
-Studio's right-side Library dock can show All Songs, Liked, Stems, Uploads, Workspaces and Studio Projects. It is searchable/filterable; songs can be auditioned and dragged onto the timeline or into Chat. citeturn2search5
+Studio's right-side Library dock can show All Songs, Liked, Stems, Uploads, Workspaces and Studio Projects. It is searchable/filterable; songs can be auditioned and dragged onto the timeline or into Chat. 
 
-A song's details can include Stems and Notes tabs. citeturn2search5
+A song's details can include Stems and Notes tabs. 
 
 ---
 
@@ -1040,9 +1039,9 @@ Current Studio export options include:
 - MIDI extracted from supported stems
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
-All Studio audio exports are high-quality WAV. Exporting MIDI from a stem currently costs **10 credits**. citeturn2search7
+All Studio audio exports are high-quality WAV. Exporting MIDI from a stem currently costs **10 credits**. 
 
-Studio can upload WAV, MP3 and MIDI. It can export full/selected/multitrack audio and individual stem WAVs. citeturn2search9turn2search7
+Studio can upload WAV, MP3 and MIDI. It can export full/selected/multitrack audio and individual stem WAVs. 
 
 ---
 
@@ -1401,9 +1400,9 @@ Cinematic alternative pop ballad, intimate low-register lead vocal, piano founda
 | Pro | 20/month | Paid-plan downloads have commercial-use rights under Suno's terms |
 | Premier | 60/month | Paid-plan downloads have commercial-use rights under Suno's terms |
 
-Monthly paid download allowances reset on the billing date and unused downloads do not roll over. A song counts once regardless of format; re-downloading the same song does not consume another quota unit, and stems from the same song count as part of that song's download. citeturn2search3
+Monthly paid download allowances reset on the billing date and unused downloads do not roll over. A song counts once regardless of format; re-downloading the same song does not consume another quota unit, and stems from the same song count as part of that song's download. 
 
-Suno says existing songs remain playable/shareable in the platform; download limits are distinct from listening/sharing. citeturn2search3
+Suno says existing songs remain playable/shareable in the platform; download limits are distinct from listening/sharing. 
 
 ### Generation credits ≠ downloads
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
@@ -1414,7 +1413,7 @@ GENERATION CREDITS
 DOWNLOAD ALLOWANCE
 ```
 
-Current V6 generation pricing is documented as two songs per 10 credits. Max Mode costs more; image/video-heavy generation can increase cost. citeturn0search7
+Current V6 generation pricing is documented as two songs per 10 credits. Max Mode costs more; image/video-heavy generation can increase cost. 
 
 ### Rights warning
 
@@ -1442,7 +1441,7 @@ Recent/current ecosystem features include:
 - Hooks for short-form music-video pairing.
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
-Suno's release notes are the authoritative place for rollout status because mobile features can arrive at different times on iOS, Android and web. citeturn0search1
+Suno's release notes are the authoritative place for rollout status because mobile features can arrive at different times on iOS, Android and web. 
 
 ### Important distinction
 
@@ -1578,7 +1577,7 @@ restrained reverb
 
 ### Studio timing problems
 
-Turn on the metronome, solo the relevant instrument, inspect the timeline and check generated clips against the beat. Suno acknowledges that timing issues can still occur in Studio 2.0. citeturn2search9
+Turn on the metronome, solo the relevant instrument, inspect the timeline and check generated clips against the beat. Suno acknowledges that timing issues can still occur in Studio 2.0. 
 
 ---
 
@@ -1656,43 +1655,43 @@ NEXT TEST:
 
 ### V6
 
-- urlCurrent Models: V6https://help.suno.com/en/articles/13924737
-- urlV6 FAQhttps://help.suno.com/en/articles/13924481
-- urlWhat's New in V6https://help.suno.com/en/articles/13924801
-- urlHow to Change Modelshttps://help.suno.com/en/articles/13924993
-- urlIntroducing V6https://suno.com/release-notes/introducing-v6
+- [Current Models: V6](https://help.suno.com/en/articles/13924737)
+- [V6 FAQ](https://help.suno.com/en/articles/13924481)
+- [What's New in V6](https://help.suno.com/en/articles/13924801)
+- [How to Change Models](https://help.suno.com/en/articles/13924993)
+- [Introducing V6](https://suno.com/release-notes/introducing-v6)
 
 ### Creation
 
-- urlMaking Music Help Centerhttps://help.suno.com/en/categories/550017
-- urlCreative Slidershttps://help.suno.com/en/articles/6141377
-- urlCustom Modelshttps://help.suno.com/en/articles/11362497
-- urlVoiceshttps://help.suno.com/en/articles/11362369
-- urlMy Tastehttps://help.suno.com/en/articles/11362561
-- urlSuno Soundshttps://help.suno.com/en/articles/10625537
+- [Making Music Help Center](https://help.suno.com/en/categories/550017)
+- [Creative Sliders](https://help.suno.com/en/articles/6141377)
+- [Custom Models](https://help.suno.com/en/articles/11362497)
+- [Voices](https://help.suno.com/en/articles/11362369)
+- [My Taste](https://help.suno.com/en/articles/11362561)
+- [Suno Sounds](https://help.suno.com/en/articles/10625537)
 
 ### Editing / Production
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
 
-- urlStudio 2.0https://help.suno.com/en/articles/13670529
-- urlStudio 2.0 Help Categoryhttps://help.suno.com/en/categories/2701953-studio-2-0
-- urlAdvanced Stem Separationhttps://suno.com/release-notes/advanced-stems
-- urlHow to Get Stemshttps://help.suno.com/en/articles/13925185
-- urlTake Laneshttps://help.suno.com/en/articles/13670913
-- urlRemove FX / Get Dryhttps://help.suno.com/en/articles/13671105
-- urlAccess Library in Studiohttps://help.suno.com/en/articles/13670849
-- urlExporting from Studiohttps://help.suno.com/en/articles/13925249
+- [Studio 2.0](https://help.suno.com/en/articles/13670529)
+- [Studio 2.0 Help Category](https://help.suno.com/en/categories/2701953-studio-2-0)
+- [Advanced Stem Separation](https://suno.com/release-notes/advanced-stems)
+- [How to Get Stems](https://help.suno.com/en/articles/13925185)
+- [Take Lanes](https://help.suno.com/en/articles/13670913)
+- [Remove FX / Get Dry](https://help.suno.com/en/articles/13671105)
+- [Access Library in Studio](https://help.suno.com/en/articles/13670849)
+- [Exporting from Studio](https://help.suno.com/en/articles/13925249)
 
 ### Organization / Ecosystem
 
-- urlWorkspaceshttps://help.suno.com/en/articles/4326849
-- urlSuno Release Noteshttps://suno.com/release-notes
-- urlSuno Bloghttps://suno.com/blog
+- [Workspaces](https://help.suno.com/en/articles/4326849)
+- [Suno Release Notes](https://suno.com/release-notes)
+- [Suno Blog](https://suno.com/blog)
 
 ### Downloads / Terms
 
-- urlDownload Limitshttps://help.suno.com/en/articles/13926209
-- urlDownloads, Models & Terms FAQhttps://help.suno.com/en/articles/13614785
+- [Download Limits](https://help.suno.com/en/articles/13926209)
+- [Downloads, Models & Terms FAQ](https://help.suno.com/en/articles/13614785)
 
 ---
 
@@ -1704,7 +1703,7 @@ Major lyric/editor improvements, cover-art iteration and other creation-surface 
 
 ### August 2026
 
-Studio 2.0 launched with MIDI, effects, wavetable synthesis, automation, Chat Bar, custom plugins and improved production workflows. Voices expanded to iOS/Android. Playlist and mobile improvements continued. citeturn0search1turn0search13
+Studio 2.0 launched with MIDI, effects, wavetable synthesis, automation, Chat Bar, custom plugins and improved production workflows. Voices expanded to iOS/Android. Playlist and mobile improvements continued. 
 
 ### September 2026
 <div align="right"><a href="#top">⬆️ Back to top</a></div>
@@ -1717,7 +1716,7 @@ V6-WILD = exploration
 V6-MINI = fast / accessible
 ```
 
-Suno also updated Studio on September 2 with BPM-aware Chat Bar behavior, plugin copy/duplicate improvements, wavetable fidelity improvements and performance/bug fixes. citeturn0search0turn0search2
+Suno also updated Studio on September 2 with BPM-aware Chat Bar behavior, plugin copy/duplicate improvements, wavetable fidelity improvements and performance/bug fixes. 
 
 ---
 
