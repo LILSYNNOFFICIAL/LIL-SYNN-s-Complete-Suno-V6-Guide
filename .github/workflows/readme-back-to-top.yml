@@ -29,19 +29,13 @@ jobs:
               if '.git' in path.parts:
                   continue
               text = path.read_text(encoding='utf-8')
-
-              # Convert supported ChatGPT URL citations to ordinary Markdown links.
               text = re.sub(
                   r'url([^]+)(https?://[^]+)',
                   lambda m: f'[{m.group(1)}]({m.group(2)})',
                   text,
               )
-              # Remove citation-only constructs when no destination is available.
               text = re.sub(r'cite[^]+', '', text)
-              # Remove any leftover ChatGPT citation glyphs so they can never appear
-              # as literal characters in the repository's Markdown.
               text = text.replace('', '').replace('', '')
-
               text = re.sub(r'\n{3,}', '\n\n', text)
               path.write_text(text.rstrip() + '\n', encoding='utf-8')
 
@@ -96,33 +90,128 @@ jobs:
           for index, link in sorted(insertions, reverse=True):
               lines.insert(index, link)
 
-          path.write_text('\n'.join(lines).rstrip() + '\n', encoding='utf-8')
+          text = '\n'.join(lines).rstrip() + '\n'
 
-      - name: Verify all Markdown files
+          # Keep one canonical repository map in the README so every guide-related
+          # artifact has a visible home from the master guide.
+          start_marker = '<!-- GUIDE-REPOSITORY-MAP:START -->'
+          end_marker = '<!-- GUIDE-REPOSITORY-MAP:END -->'
+          map_block = '''<!-- GUIDE-REPOSITORY-MAP:START -->
+
+# 🗺️ GUIDE REPOSITORY MAP
+
+This repository is organized around the README as the **master source**. Every deep-dive guide links back here, while this map links outward to the complete supporting material.
+
+## Core guide expansions
+
+- [SUNO-V6-EVERYTHING-EXPANSION.md](SUNO-V6-EVERYTHING-EXPANSION.md)
+- [SUNO-V6-FINAL-CURRENT-EXPANSION.md](SUNO-V6-FINAL-CURRENT-EXPANSION.md)
+- [SUNO-V6-CURRENT-COVERAGE-AUDIT.md](SUNO-V6-CURRENT-COVERAGE-AUDIT.md)
+- [SUNO-V6-CURRENT-GAPS-CLOSURE.md](SUNO-V6-CURRENT-GAPS-CLOSURE.md)
+- [SUNO-V6-GAP-CLOSURE-ALL-REMAINING-CURRENT.md](SUNO-V6-GAP-CLOSURE-ALL-REMAINING-CURRENT.md)
+- [SUNO-V6-ADDITIONAL-CURRENT-DETAILS.md](SUNO-V6-ADDITIONAL-CURRENT-DETAILS.md)
+- [SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md](SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md)
+
+## Project / maintenance source files
+
+- [2026-09-13 Suno V6 complete-upgrade plan](docs/superpowers/plans/2026-09-13-suno-v6-complete-upgrade.md)
+- [README navigation and cross-link maintenance workflow](.github/workflows/readme-back-to-top.yml)
+- [License](LICENSE)
+
+## Navigation contract
+
+**README → guide:** use the links above to enter any deep-dive.
+
+**Guide → README:** every `SUNO-V6-*.md` guide contains a canonical link back to this README.
+
+**Guide → official source:** each guide's source/reference sections remain the evidence layer; official Suno documentation outranks repository prose when the product changes.
+
+<div align="right"><a href="#top">⬆️ Back to top</a></div>
+
+<!-- GUIDE-REPOSITORY-MAP:END -->'''
+
+          if start_marker in text and end_marker in text:
+              before = text.split(start_marker, 1)[0].rstrip()
+              after = text.split(end_marker, 1)[1].lstrip()
+              text = before + '\n\n' + map_block + ('\n\n' + after if after else '\n')
+          else:
+              marker = '\n\n# ⚠️ ACCURACY POLICY'
+              if marker in text:
+                  text = text.replace(marker, '\n\n' + map_block + marker, 1)
+              else:
+                  text = text.rstrip() + '\n\n' + map_block + '\n'
+
+          path.write_text(text.rstrip() + '\n', encoding='utf-8')
+
+      - name: Maintain guide-to-README backlinks
         shell: python
         run: |
           from pathlib import Path
+
+          repo_root = Path('.')
+          readme_link = '[← Back to the master README](README.md)'
+          guide_files = sorted(repo_root.glob('SUNO-V6-*.md'))
+
+          for path in guide_files:
+              text = path.read_text(encoding='utf-8').strip()
+              if '<a id="top"></a>' not in text[:500]:
+                  text = '<a id="top"></a>\n\n' + text
+
+              footer_marker = '<!-- MASTER-README-LINK:START -->'
+              footer_end = '<!-- MASTER-README-LINK:END -->'
+              footer = f'''{footer_marker}\n\n---\n\n{readme_link} · [↑ Back to top](#top)\n\n{footer_end}'''
+
+              if footer_marker in text and footer_end in text:
+                  before = text.split(footer_marker, 1)[0].rstrip()
+                  text = before + '\n\n' + footer
+              else:
+                  text = text.rstrip() + '\n\n' + footer
+
+              path.write_text(text.rstrip() + '\n', encoding='utf-8')
+
+      - name: Verify repository cross-links and Markdown files
+        shell: python
+        run: |
+          from pathlib import Path
+
           forbidden = ('', '')
-          bad = []
+          bad_glyphs = []
           for path in Path('.').rglob('*.md'):
               if '.git' in path.parts:
                   continue
               text = path.read_text(encoding='utf-8')
               if any(token in text for token in forbidden):
-                  bad.append(str(path))
-          if bad:
-              raise SystemExit('Forbidden citation glyphs remain in: ' + ', '.join(bad))
+                  bad_glyphs.append(str(path))
+          if bad_glyphs:
+              raise SystemExit('Forbidden citation glyphs remain in: ' + ', '.join(bad_glyphs))
 
           readme = Path('README.md').read_text(encoding='utf-8')
-          required = (
+          required_readme = (
               '<a id="top"></a>',
+              'GUIDE-REPOSITORY-MAP:START',
               'SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md',
-              '⬆️ Back to top',
+              'SUNO-V6-EVERYTHING-EXPANSION.md',
+              'SUNO-V6-FINAL-CURRENT-EXPANSION.md',
+              'SUNO-V6-CURRENT-COVERAGE-AUDIT.md',
+              'SUNO-V6-CURRENT-GAPS-CLOSURE.md',
+              'SUNO-V6-GAP-CLOSURE-ALL-REMAINING-CURRENT.md',
+              'SUNO-V6-ADDITIONAL-CURRENT-DETAILS.md',
+              'docs/superpowers/plans/2026-09-13-suno-v6-complete-upgrade.md',
+              '.github/workflows/readme-back-to-top.yml',
+              'LICENSE',
           )
-          missing = [token for token in required if token not in readme]
+          missing = [token for token in required_readme if token not in readme]
           if missing:
-              raise SystemExit(f'README verification failed; missing: {missing}')
-          print('All Markdown glyph checks and README navigation checks passed.')
+              raise SystemExit(f'README repository-map verification failed; missing: {missing}')
+
+          for path in sorted(Path('.').glob('SUNO-V6-*.md')):
+              text = path.read_text(encoding='utf-8')
+              required = ('MASTER-README-LINK:START', '[← Back to the master README](README.md)')
+              missing = [token for token in required if token not in text]
+              if missing:
+                  raise SystemExit(f'{path} is missing guide backlink: {missing}')
+
+          print('Repository guide map, guide-to-README backlinks, navigation, and glyph checks passed.')
 
       - name: Commit Markdown cleanup
         shell: bash
@@ -134,5 +223,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- '*.md'
-          git commit -m "Remove stray citation glyphs from Markdown [skip ci]"
+          git commit -m "Maintain guide repository cross-links [skip ci]"
           git push
