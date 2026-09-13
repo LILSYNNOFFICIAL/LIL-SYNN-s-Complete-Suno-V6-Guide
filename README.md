@@ -1,1867 +1,733 @@
-# 🎵 SUNO EVERYTHING GUIDE
+# 🎵 LIL SYNN's Complete Suno V6 Guide
 
-### The Complete Suno Creation, Prompting, Editing & Production Knowledge Base
+### The Advanced Suno V6 Creation, Prompting, Editing, Production, Audio Quality and Control Knowledge Base
 
-<p align="center">
-  <strong>Everything Suno. One evolving knowledge base.</strong><br>
-  Prompts • Lyrics • Styles • Models • Controls • Editing • Stems • Production • Advanced Techniques
-</p>
+<p align="center"><strong>The God Guide to Suno V6</strong><br>Advanced creation • Lyrics • Style • Sliders • Advanced Options • Max Mode • References • Editing • Stems • Studio • Audio Quality</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Suno-V6-black?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Prompting-Advanced-8A2BE2?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Music%20Production-AI-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Work%20in%20Progress-orange?style=for-the-badge">
-</p>
+<p align="center"><img src="https://img.shields.io/badge/Suno-V6-black?style=for-the-badge"> <img src="https://img.shields.io/badge/V6--WILD-EXPERIMENTAL-8A2BE2?style=for-the-badge"> <img src="https://img.shields.io/badge/Advanced-Mode-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Production-Guide-success?style=for-the-badge"> <img src="https://img.shields.io/badge/Status-Living%20Guide-orange?style=for-the-badge"></p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Documentation-Expanding-lightgrey?style=flat-square">
-  <img src="https://img.shields.io/badge/Techniques-Continuously%20Updated-success?style=flat-square">
-  <img src="https://img.shields.io/badge/Models-V6%20%7C%20Future%20Models-black?style=flat-square">
-</p>
+<p align="center"><a href="https://suno.com/release-notes/introducing-v6">Official V6 Release</a> | <a href="https://help.suno.com/en/articles/13924481">V6 FAQ</a> | <a href="https://help.suno.com/en/articles/13924737">V6 Models</a> | <a href="https://help.suno.com/en/articles/6141377">Creative Sliders</a> | <a href="https://help.suno.com/en/articles/13924801">What's New</a></p>
 
 ---
 
 ## 🔗 QUICK NAVIGATION
 
-<p align="center">
-  <a href="#-about-this-repository">About</a> •
-  <a href="#-suno-models">Models</a> •
-  <a href="#-lyrics-box">Lyrics Box</a> •
-  <a href="#-style-box">Style Box</a> •
-  <a href="#-prompt-engineering">Prompt Engineering</a> •
-  <a href="#-advanced-creative-controls">Creative Controls</a> •
-  <a href="#-creation-tools">Creation Tools</a> •
-  <a href="#-editing-tools">Editing</a> •
-  <a href="#-stems--production">Stems</a> •
-  <a href="#-vocal-direction">Vocals</a> •
-  <a href="#-instrumentation--arrangement">Arrangement</a> •
-  <a href="#-genre-fusion">Genre Fusion</a> •
-  <a href="#-production--sonic-direction">Production</a> •
-  <a href="#-troubleshooting">Troubleshooting</a> •
-  <a href="#-iteration-strategy">Iteration</a> •
-  <a href="#-prompt-library">Prompt Library</a> •
-  <a href="#-experimental-techniques">Experimental Techniques</a>
-</p>
+<p align="center"><a href="#-about">About</a> | <a href="#-v6-model-family">Models</a> | <a href="#-advanced-mode">Advanced Mode</a> | <a href="#-lyrics-box">Lyrics Box</a> | <a href="#-style-box">Style Box</a> | <a href="#-sliders-and-advanced-options">Sliders</a> | <a href="#-max-mode">Max Mode</a> | <a href="#-references">References</a> | <a href="#-audio-quality">Audio Quality</a> | <a href="#-same-chorus-every-time">Same Chorus</a> | <a href="#-editing">Editing</a> | <a href="#-stems-and-studio">Stems and Studio</a> | <a href="#-workflows">Workflows</a> | <a href="#-troubleshooting">Troubleshooting</a> | <a href="#-official-resources">Resources</a></p>
 
 ---
 
-## 🎯 ABOUT THIS REPOSITORY
+## 🎯 ABOUT
 
-This repository is intended to become a comprehensive, continuously expanding knowledge base for **Suno** and AI-assisted music creation.
+This repository is a living technical guide to Suno V6 for creators who want advanced control rather than a basic text to song tutorial. It covers the V6 model family, Advanced and Custom creation, Lyrics Box engineering, Style Box engineering, Creative Sliders, Advanced Options, Max Mode, references, vocal control, arrangement, production prompting, editing, stems, Studio, Remaster, repeatability, troubleshooting and systematic experimentation.
 
-The goal is not simply to document buttons or explain basic generation.
+Suno describes V6 as its flagship model with stronger control and precision, broader understanding of musical language and support for vocals, instrumentation, structure, mood, references and overall feel. V6 can work with text, audio, images and video in supported workflows. Official documentation should always take priority over community assumptions because Suno can change models and UI behavior.
 
-The goal is to understand how Suno actually responds to instructions, how its different controls interact, how prompting affects musical interpretation, how to control vocals and instrumentation, how to edit existing generations, and how to push the system toward increasingly specific creative results.
-
-This repository will contain practical techniques, tested prompts, examples, workflows, experiments, production strategies, editing methods, troubleshooting information, and discoveries made through real-world use.
-
-The repository is designed to evolve alongside Suno.
-
-As new models, tools, controls, editing capabilities, and prompting behaviors appear, this documentation will be expanded and updated.
+This guide deliberately separates documented Suno behavior from practical recommendations. Values such as `0% Variety`, `90% Style Influence` or `30% Weirdness` are starting points for controlled experiments, not official magic presets.
 
 ---
 
-## 🧠 WHAT THIS REPOSITORY COVERS
+## 🧬 V6 MODEL FAMILY
 
-Suno is much more than a text-to-song generator.
+Suno currently documents three V6 family models. V6 is the flagship model for reliable, precise and polished creation. V6-WILD is designed for exploration and intentionally less predictable results. V6-MINI is a faster V6 generation experience available to all users. Official model documentation: `https://help.suno.com/en/articles/13924737`.
 
-A complete Suno workflow can involve the **Lyrics Box**, **Style Box**, audio references, creative controls, model selection, generation modes, editing tools, stems, remixing, sampling, covers, personalization, and iterative refinement.
+V6 should normally be the model used when you know what you want. V6-WILD is useful when you want unusual arrangements, unexpected textures, genre collisions and creative discovery. V6-MINI is useful for fast concept testing before committing to a final generation.
 
-The interaction between these systems is often more important than any individual setting.
-
-The general creation pipeline can be thought of as:
+Suno currently documents up to eight minutes per V6 family generation. V6 and V6-WILD are available to Pro and Premier subscribers, while V6-MINI is available to all users. Availability of individual tools can depend on account and rollout.
 
 ```text
-LYRICS
-   +
-STYLE
-   +
-AUDIO / IMAGE / VIDEO / REFERENCES
-   ↓
-CREATIVE CONTROLS
-   ↓
-CREATION OPERATION
-   ↓
-GENERATION
-   ↓
-LISTEN
-   ↓
-EDIT / REMIX / EXTEND / REPLACE
-   ↓
-REFINE
-   ↓
-FINAL SONG
+V6       = CONTROL + POLISH + PRECISION
+V6-WILD  = EXPLORATION + SURPRISE + VARIATION
+V6-MINI  = SPEED + TESTING + ITERATION
 ```
 
-The objective of this repository is to document each layer independently and then explain how they work together.
+Do not treat V6-WILD as a higher quality setting. Its purpose is discovery. A strong workflow is to discover ideas with V6-WILD and bring the best ideas back into controlled V6 generation.
 
 ---
 
-# 🎛️ SUNO MODELS
+## 🧠 ADVANCED MODE
 
-Suno's model system is important because the model determines how instructions are interpreted and how the resulting music behaves.
+Suno's Custom and Advanced workflows expose more control than Simple creation. Suno's Android Custom Mode documentation describes entering your own lyrics, Styles and Advanced options before creating: `https://help.suno.com/en/articles/3726721`.
 
-## SUNO V6
+Advanced creation should be treated like a controlled production environment. Lyrics define words and section structure. Style defines musical identity. Advanced Options provide additional constraints. Sliders control variation and reference adherence. Model choice controls the generation family. References provide additional source information. Editing tools repair the result after generation.
 
-V6 is Suno's flagship generation model.
-
-It is designed for greater musical nuance, stronger interpretation of natural-language instructions, improved control, and more sophisticated generation and editing capabilities.
-
-V6 can work with text, audio, images, and video inputs depending on the workflow.
-
-It can also perform more targeted modifications to existing songs rather than requiring an entirely new generation for every change.
-
-V6 supports generation of songs up to approximately eight minutes.
-
-V6 is intended for users who want greater control and more polished musical results.
-
-## V6-WILD
-
-V6-WILD is an experimental variation of V6.
-
-The purpose of a more unpredictable model is not maximum obedience.
-
-It is useful when exploration, surprise, unusual arrangements, unexpected transitions, unconventional instrumentation, or less predictable interpretations are desirable.
-
-A highly controlled workflow and a highly experimental workflow should therefore not necessarily use the same model.
-
-## V6-MINI
-
-V6-MINI is the lighter and faster V6 option.
-
-It is useful for experimentation, rapid iteration, testing ideas, and users who do not require the full capabilities of the flagship model.
-
-## MODEL SELECTION STRATEGY
-
-A practical approach is:
-
-```text
-V6
-↓
-Precision
-Control
-Polish
-Detailed prompting
-
-V6-WILD
-↓
-Experimentation
-Unexpected ideas
-Creative exploration
-Controlled chaos
-
-V6-MINI
-↓
-Fast testing
-Rapid iteration
-Lightweight generation
-```
-
-Model choice should be treated as part of the creative workflow rather than as an afterthought.
+The central rule is to avoid changing everything at once. If the vocal is correct and the drums are wrong, repair the drums. If the chorus is excellent and the verse is wrong, preserve the chorus. If the arrangement is excellent but the mix is muddy, use production tools instead of rebuilding the entire song.
 
 ---
 
-# ✍️ LYRICS BOX
+## ✍️ LYRICS BOX
 
-The Lyrics Box controls the lyrical content and provides an important layer of structural and performance information.
+The Lyrics Box is both a lyric input and a structural communication layer. Suno officially supports supplying your own lyrics in Custom Mode: `https://help.suno.com/en/articles/2415873`.
 
-Lyrics should not always be treated as nothing more than words.
-
-Formatting, section labels, contextual instructions, vocal cues, repetition, pacing indicators, and arrangement hints can influence how Suno interprets the song.
-
-A simple lyric structure might look like:
+Use consistent section labels and repeat important hooks exactly when repetition matters.
 
 ```text
 [Intro]
 
 [Verse 1]
-Lyrics...
 
 [Pre-Chorus]
-Lyrics...
 
 [Chorus]
-Lyrics...
 
 [Verse 2]
-Lyrics...
+
+[Pre-Chorus]
+
+[Chorus]
 
 [Bridge]
-Lyrics...
 
 [Final Chorus]
 
 [Outro]
 ```
 
-The Lyrics Box will eventually have its own dedicated prompting system in this repository.
+Useful performance language includes `intimate`, `breathy`, `restrained`, `urgent`, `powerful`, `whispered`, `spoken`, `stacked harmony`, `doubled lead`, `call and response`, `octave harmony`, `ad-lib`, `falsetto`, `dry vocal`, `wide backing vocals` and `instrumental break`.
 
-Future documentation will cover techniques for communicating:
+Put song-wide musical identity in Style whenever possible. Use Lyrics for section-specific behavior. Avoid turning every line into a technical instruction because excessive instruction density can compete with the actual lyric.
 
-```text
-Vocal delivery
-Emotional intensity
-Section transitions
-Backing vocals
-Harmonies
-Call and response
-Ad-libs
-Whispers
-Spoken passages
-Screams
-Breathy vocals
-Layered vocals
-Instrumental breaks
-Dynamic changes
-Arrangement cues
-Outro behavior
-```
-
-The Lyrics Box should be considered both a **lyrical input** and a potential **structural communication layer**.
+Line length also matters. Dense lines can encourage rushed phrasing. Shorter lines create more space. Punctuation and line breaks can communicate phrasing intent, but they are not deterministic timing commands.
 
 ---
 
-# 🎨 STYLE BOX
+## 🎨 STYLE BOX
 
-The Style Box is where musical identity is communicated.
+The Style Box is the musical identity layer. It should describe what the record sounds like, not merely name a genre.
 
-A Style prompt can describe characteristics such as:
-
-```text
-Genre
-Subgenre
-Era
-Tempo
-Mood
-Instrumentation
-Vocal character
-Production style
-Mix characteristics
-Song structure
-Performance style
-Energy
-Dynamics
-Atmosphere
-Recording aesthetic
-```
-
-A basic style description might be:
+A powerful Style structure is:
 
 ```text
-Emotional electropop, cinematic synth-pop, intimate male vocals,
-dark atmospheric production, warm analog synthesizers,
-punchy electronic drums, wide chorus, restrained verses,
-dramatic final chorus, polished modern production.
-```
-
-The Style Box should generally describe **what the music should sound like**, while the Lyrics Box communicates the **song's words and structural context**.
-
-The distinction is not absolute, but maintaining separation between musical identity and lyrical content generally makes complex prompting easier to reason about.
-
----
-
-# 🧬 STYLE PROMPT STRUCTURE
-
-A useful Style prompt can be organized conceptually as:
-
-```text
-[GENRE]
-+
-[ERA / REFERENCE]
-+
-[VOCAL CHARACTER]
-+
-[INSTRUMENTATION]
-+
-[ARRANGEMENT]
-+
-[PRODUCTION]
-+
-[MOOD]
-+
-[DYNAMICS]
+PRIMARY GENRE
+SECONDARY INFLUENCE
+VOCAL CHARACTER
+INSTRUMENT PALETTE
+RHYTHM
+ARRANGEMENT
+DYNAMICS
+ATMOSPHERE
+MIX CHARACTER
+MASTERING CHARACTER
 ```
 
 Example:
 
 ```text
-Alternative electropop with early-2000s synth-pop influence,
-intimate emotional male lead vocal, dark warm synthesizers,
-punchy electronic drums, deep controlled bass,
-minimal verses that expand into a huge melodic chorus,
-layered harmonies, atmospheric textures,
-cinematic tension, polished modern mix,
-melancholic but powerful emotional delivery.
+Dark emotional electropop with cinematic synth-pop influence, intimate expressive male lead vocal, warm analog polysynths, controlled sub bass, tight punchy electronic drums, sparse verses, rising pre-choruses, huge melodic choruses, layered vocal harmonies, wide stereo synth textures, strong dynamic contrast, vocal-forward center image, clean low end, defined kick and bass separation, restrained reverb, smooth open high end, preserved transient punch, polished modern commercial production.
 ```
 
-This structure provides multiple dimensions for Suno to interpret instead of relying on a single genre label.
+The Style Box works best when the primary identity is obvious. `Electropop with alternative rock guitar texture and subtle R&B vocal phrasing` is more controllable than `pop rock EDM hip hop R&B metal jazz` because the former establishes hierarchy.
+
+Avoid contradictory instructions unless the contradiction is intentionally assigned to different sections. `Sparse verse` and `huge final chorus` are complementary. `Sparse throughout` and `massive wall of sound throughout` compete.
 
 ---
 
-# 🧠 PROMPT ENGINEERING
+## 🧱 ADVANCED STYLE FORMULA
 
-Prompt engineering for Suno is fundamentally about communicating musical intent.
-
-A prompt can be technically detailed while still producing poor results if the information is contradictory, redundant, or poorly prioritized.
-
-The objective is not to write the longest possible prompt.
-
-The objective is to provide the **right information in a useful hierarchy**.
-
-A useful conceptual hierarchy is:
+Use this reusable template:
 
 ```text
-CORE GENRE
-↓
-SONIC IDENTITY
+Primary identity: [genre and era].
+Vocals: [gender, texture, register, emotion, delivery].
+Instruments: [core instruments and roles].
+Rhythm: [drum character, groove, tempo feel].
+Arrangement: [verse → pre-chorus → chorus → bridge → final chorus arc].
+Dynamics: [how intensity changes].
+Atmosphere: [emotional and environmental character].
+Mix: [vocal position, width, low-end behavior, transient character].
+Mastering character: [polished, open, controlled, dynamic, etc.].
+```
+
+Concrete musical behavior is usually more useful than generic praise words. Replace `beautiful, amazing, cinematic, professional, high quality` with things such as `vocal-forward`, `controlled low end`, `sparse verse`, `wide chorus`, `defined transients`, `restrained reverb` and `preserved dynamic contrast`.
+
+---
+
+## 🎚️ SLIDERS AND ADVANCED OPTIONS
+
+Suno's documented Creative Sliders are Weirdness, Style Influence and Audio Influence when an audio upload is used. Official documentation: `https://help.suno.com/en/articles/6141377`. V6 also documents Variety, which changes and updates style prompts. Suno specifically says that reducing Variety to 0 preserves full control over your style tags: `https://help.suno.com/en/articles/13924481`.
+
+These are behavioral controls, not quality scores. Higher is not automatically better. The correct setting depends on whether the goal is preservation, interpretation, exploration or transformation.
+
+### VARIETY
+
+Variety controls output variation by adjusting and updating style prompting. Suno specifically recommends `0` when you want full control over your style tags.
+
+For controlled production, start at `0%`. For exploration, increase it deliberately. High Variety is usually a poor starting point when you are trying to reproduce a specific vocal, chorus or arrangement.
+
+```text
+0%     = maximum control over supplied style direction
+LOW    = controlled variation
+MID    = balanced exploration
+HIGH   = increased variation and discovery
+```
+
+### WEIRDNESS
+
+Weirdness moves from Safe toward Chaos, with 50% described by Suno as the normal expected result. Lower settings favor safer interpretation. Higher settings encourage unusual results.
+
+A practical starting range is `20% to 40%` for controlled commercial music, around `50%` for balanced exploration and `60%+` for deliberate experimentation. These are workflow recommendations, not official presets.
+
+Do not raise Weirdness merely because a prompt is unclear. More unpredictability can amplify a poorly defined instruction instead of fixing it.
+
+### STYLE INFLUENCE
+
+Style Influence controls how closely the result follows the Style input, from Loose to Strong. A practical advanced starting point for strict Style adherence is `80% to 95%`.
+
+Maximum Style Influence does not fix a bad Style Box. It can simply make V6 follow a poorly written Style more strongly. Build the Style first, then increase influence only as much as necessary.
+
+### AUDIO INFLUENCE
+
+Audio Influence appears when audio is supplied and controls how strongly the generated result relates to the source. Lower values encourage reinterpretation. Higher values favor preservation.
+
+For preservation-focused work, a practical starting range is `85% to 100%`. For transformation, begin lower and increase only if the source relationship becomes too weak.
+
+A clean source matters. Clipping, noise, heavy limiting, severe compression and poor balance can become part of the problem. Audio Influence cannot magically turn a poor source into a perfect reference.
+
+### PERSONALIZATION
+
+Personalization can incorporate established taste into generation. It is useful when you want Suno to reflect your broader musical preferences. It is less useful during controlled A/B testing because it introduces another variable.
+
+For strict experiments, turn off unnecessary personalization when the interface allows it. For artist development, use it intentionally as another layer of identity.
+
+### VOCAL GENDER
+
+Suno currently exposes Vocal Gender in Advanced Options for Custom Mode, with Male and Female choices. The official documentation is `https://help.suno.com/en/articles/10153473`.
+
+Use the dedicated setting when available for consistency and then describe vocal character in Style. For example: `Male, intimate low-mid register, restrained verse delivery, clear diction, controlled grit at peak intensity, powerful melodic chorus.`
+
+### EXCLUDE
+
+Suno provides an Exclude field inside Advanced Options. It can specify instruments and other elements you do not want: `https://help.suno.com/en/articles/3161921`.
+
+Use Exclude to remove persistent unwanted behavior, but use positive Style instructions to describe what you actually want.
+
+```text
+Exclude example:
+banjo, ukulele, brass section, trap hi hats, distorted guitar, excessive choir, spoken word, lo-fi cassette noise
+```
+
+---
+
+## 🚀 MAX MODE
+
+Suno describes Max Mode as an option that gives V6 more resources to get the generation right and costs more credits. Suno specifically recommends it for songs longer than two minutes, covers where closeness matters, style transfer and keeping vocals and style consistent throughout the song: `https://help.suno.com/en/articles/13924481`.
+
+Max Mode should therefore be treated as a targeted fidelity and finishing option rather than a universal quality button.
+
+A practical controlled profile is:
+
+```text
+MODEL: V6
+VARIETY: 0%
+WEIRDNESS: 30% to 40%
+STYLE INFLUENCE: 85% to 95%
+AUDIO INFLUENCE: 90% to 100% when preservation matters
+PERSONALIZATION: OFF for strict experiments
+MAX MODE: ON for important long or consistency-sensitive generations
+```
+
+Test cheaply first when appropriate. Once the creative direction is proven, use Max Mode for the generation that actually matters.
+
+---
+
+## 🖼️ REFERENCES
+
+V6 supports creation using text, audio, images and video in supported workflows. Suno's V6 FAQ explicitly says V6 can reference multiple inputs including Suno songs, playlists, audio uploads, images and video in one prompt. Official FAQ: `https://help.suno.com/en/articles/13924481`.
+
+There is an important mode distinction. The current official FAQ explicitly describes multiple reference inputs in Simple Mode. Do not assume that every image or video reference control is exposed identically in Advanced or Custom Mode. The exact interface can change with rollout.
+
+When using an image as inspiration, tell V6 what musical information to extract instead of asking it to literally describe the picture.
+
+```text
+Use the image as visual mood reference only. Translate its nocturnal lighting, isolation, muted colors and cinematic tension into a dark emotional electropop arrangement. Do not turn the visual description into literal lyrics. Preserve an intimate human vocal and build toward a large melodic chorus.
+```
+
+Suno also notes that using many images and videos can increase credit cost, so reference-heavy generations should be deliberate.
+
+---
+
+## 🎵 SAME CHORUS EVERY TIME
+
+There is no documented V6 switch that guarantees an identical chorus melody, vocal performance, harmony and production every time. Generative music is not the same as a sequencer repeating a fixed audio region.
+
+The strongest prompting strategy is to make every chorus use exactly the same lyrics, use consistent section labels and explicitly tell V6 to preserve the chorus identity.
+
+```text
+The chorus is the primary recurring hook. Every chorus should preserve the same core melody, vocal phrasing, harmonic movement, rhythmic hook and arrangement identity. Do not invent a new chorus melody for later repetitions.
+```
+
+Use:
+
+```text
+[Chorus]
+EXACT SAME CHORUS LYRICS
+
+[Verse 2]
+NEW LYRICS
+
+[Chorus]
+EXACT SAME CHORUS LYRICS
+
+[Bridge]
+NEW LYRICS
+
+[Final Chorus]
+EXACT SAME CHORUS LYRICS
+```
+
+Then use low Variety, controlled Weirdness, strong Style Influence and Max Mode when the track is long or consistency is critical.
+
+If V6 still changes the chorus too much, stop regenerating the whole song. Establish the best chorus first and use Replace Section, editing or Studio to preserve the strongest result. If exact sample-identical repetition is required, duplicate the successful audio region in Studio or a DAW. Prompting can encourage musical repetition but cannot guarantee identical audio.
+
+---
+
+## 🔥 AUDIO QUALITY
+
+V6 is designed to deliver higher quality, but a high quality model does not guarantee a professional mix on every generation. Many perceived quality problems are actually arrangement problems. Too many layers, excessive low-mid energy, constant maximum density, competing vocals and instruments, excessive effects and uncontrolled dynamics can make an excellent generation sound poor.
+
+The first quality strategy is arrangement control. Tell V6 where to leave space.
+
+```text
+Leave headroom between major elements. Keep verses intentionally sparse. Maintain a clean vocal center. Avoid excessive low-mid buildup. Keep kick and bass clearly separated. Use wide synth layers without collapsing the vocal center. Preserve transient punch. Avoid harsh high-frequency buildup and excessive limiting.
+```
+
+Do not write only `make it high quality`. Describe the audible qualities that represent quality.
+
+The second strategy is clean source material. When using audio references, start with the cleanest source available. Avoid clipping, severe noise, heavy limiting and degraded audio whenever possible.
+
+The third strategy is consistency. For important long generations, Max Mode is specifically recommended by Suno for long and consistency-sensitive songs.
+
+The fourth strategy is surgical editing. If the song is excellent except for one snare, vocal phrase, guitar part or chorus, repair that part instead of rebuilding everything.
+
+The fifth strategy is finishing. Suno's Remaster tool can create subtle variations intended to improve sound quality, mix balance, sonic character and vocal clarity. Official documentation: `https://help.suno.com/en/articles/8105281`.
+
+A practical quality starting profile is:
+
+```text
+MODEL: V6
+VARIETY: 0%
+WEIRDNESS: 25% to 40%
+STYLE INFLUENCE: 90%
+AUDIO INFLUENCE: 90% to 100% when using a reference
+PERSONALIZATION: OFF for controlled testing
+MAX MODE: ON for important long songs
+```
+
+A production-oriented Style ending can be:
+
+```text
+vocal-forward center image, clean controlled low end, defined kick and bass separation, punchy transients, restrained reverb, wide stereo ambience, clear vocal articulation, smooth open high end, preserved dynamic contrast, polished commercial production without excessive loudness distortion.
+```
+
+For exact EQ, compression, automation, level balancing and frequency shaping, use Suno Studio or an external DAW. The Style Box is not a replacement for a parametric mixing console.
+
+---
+
+## 🎛️ PRODUCTION LANGUAGE
+
+Useful V6 production vocabulary includes `vocal-forward`, `center image`, `stereo width`, `controlled low end`, `sub bass`, `transient punch`, `dynamic contrast`, `dry intimate vocal`, `short plate reverb`, `long cinematic tail`, `layered harmonies`, `doubled lead`, `mono-compatible low end`, `open high end`, `analog warmth`, `clean digital clarity`, `tight kick`, `controlled bass`, `sidechain movement`, `sparse arrangement`, `dense arrangement`, `drop`, `breakdown`, `build`, `impact`, `release` and `final chorus lift`.
+
+Use technical language to communicate audible results. `Controlled low end` is useful. A precise parametric EQ instruction such as `cut 1.2 dB at 74 Hz with Q 1.1` should not be treated as a guaranteed DAW command because V6 is not a conventional parametric EQ interface.
+
+---
+
+## 🥁 ARRANGEMENT AND DYNAMICS
+
+V6 responds better to arrangement movement than to a flat list of instruments. A useful arc is:
+
+```text
+INTRO
+minimal identity statement
+
+VERSE
+sparse rhythm and intimate vocal
+
+PRE-CHORUS
+harmonic tension and rising energy
+
+CHORUS
+full rhythm, expanded harmony, wider stereo field
+
+VERSE 2
+reduced density with one new texture
+
+BRIDGE
+change perspective, harmony or instrumentation
+
+FINAL CHORUS
+largest arrangement and strongest vocal layering
+
+OUTRO
+remove layers deliberately and resolve
+```
+
+Avoid making the entire record `huge`, `massive`, `epic`, `wide` and `maximal`. Those words become more useful when assigned to the sections where they matter.
+
+---
+
+## 🎤 VOCALS
+
+Vocal identity can be described through gender, register, weight, texture, clarity, breathiness, grit, emotional intensity and delivery. Use dedicated Vocal Gender controls when available and use Style for the detailed character.
+
+```text
+Male lead vocal, intimate low-mid register, emotionally restrained verse delivery, clear diction, slight breath texture, controlled grit at peak intensity, strong melodic chorus, layered octave harmony on final chorus, tasteful backing vocal responses.
+```
+
+Suno's Voices system is separate from ordinary default vocal generation. Current documentation: `https://help.suno.com/en/articles/11362369`.
+
+Personas can preserve the essence of a song's vocals and style for reuse. Official documentation: `https://help.suno.com/en/articles/3484161`.
+
+---
+
+## 🧬 GENRE FUSION
+
+Give genre fusion a hierarchy. Instead of `pop rock EDM hip hop R&B metal jazz`, use:
+
+```text
+Modern emotional electropop as the primary identity, with alternative rock guitar texture in the verses, subtle R&B vocal phrasing, and restrained cinematic EDM-style impact reserved for the final chorus.
+```
+
+This tells V6 which genre is the foundation and which influences have specific jobs.
+
+---
+
+## 🧩 CREATION TOOLS
+
+Create is the primary generation workflow. Cover is for significant transformation of an existing song while retaining important identity. Extend continues an existing song. Inspire uses a playlist of your music as a style and mood reference. Mashup combines sources. Sample uses a selected section as a creative starting point.
+
+Official Inspire documentation: `https://help.suno.com/en/articles/6882753`. Official Sample and Mashup release: `https://suno.com/release-notes/meet-our-new-create-features-sample-mashup`.
+
+Suno recommends short Inspire playlists of roughly three to five songs when control is important. A tightly curated reference set is usually more useful than unrelated songs.
+
+---
+
+## 🩹 EDITING
+
+The core editing philosophy is: do not rebuild what can be surgically repaired.
+
+```text
+VOCAL PROBLEM       → Edit Vocals
+INSTRUMENT PROBLEM  → Edit Instruments
+ONE BAD SECTION     → Replace Section
+NEED MORE SONG      → Extend
+WHOLE TRANSFORMATION→ Cover
+COMBINE SOURCES     → Mashup
+USE A FRAGMENT      → Sample
+SUBTLE POLISH       → Remaster
+```
+
+Replace Section documentation: `https://help.suno.com/en/articles/3271873`.
+
+When editing, explicitly protect what should not change.
+
+```text
+Preserve the existing lyrics, vocal identity, tempo, harmonic movement and overall arrangement. Replace only the electric guitar texture. Keep the rhythmic and harmonic role unchanged.
+```
+
+Narrow edits are generally preferable when only one part is wrong because large selected regions give the model more freedom to alter neighboring information.
+
+---
+
+## 🎚️ REMASTER
+
+Remaster is for subtle refinement rather than major reinvention. Suno currently provides Subtle, Normal and High variation strength. Subtle stays closest to the original. Normal refreshes the result while maintaining the core song. High allows more noticeable musical and vocal changes.
+
+Use Subtle when the performance is already right and you mainly want sonic refinement. Use Normal when some variation is acceptable. Use High only when you are willing to lose more of the original.
+
+---
+
+## 🧱 STEMS AND STUDIO
+
+Suno's current stem separation has Auto Split, Split from Mix and Advanced Split. Advanced Split provides Premier users with a much larger selection of instruments. Official documentation: `https://help.suno.com/en/articles/12702337`.
+
+Auto Split is useful for broad extraction. Split from Mix is useful when you want a selected vocal or instrument plus the complement. Advanced Split is designed for precise producer-oriented extraction.
+
+Suno Studio 2.0 includes MIDI, audio effects, built-in synths, a chat bar, wavetable synthesis and automation. Official release: `https://suno.com/release-notes/studio-2`. Studio documentation: `https://help.suno.com/en/articles/13670529`.
+
+Once a generation is musically correct, Studio is often a better place to solve precise production problems than repeatedly regenerating the entire song.
+
+---
+
+## 🧪 SOUNDS
+
+Suno Sounds is an experimental creation mode for sound effects, instrument samples, ambient audio and loops. It provides Type, BPM and Key controls where appropriate. Official documentation: `https://help.suno.com/en/articles/10625537`.
+
+Use Sounds when you need a specific one-shot, loop, texture, transition, foley element or musical seed instead of a complete song.
+
+---
+
+## 🧠 PROMPT ENGINEERING
+
+A good advanced prompt is a production brief, not a novel. A useful hierarchy is:
+
+```text
+PRIMARY GENRE
 ↓
 VOCAL IDENTITY
 ↓
-INSTRUMENTATION
+INSTRUMENT PALETTE
 ↓
-ARRANGEMENT
+ARRANGEMENT ARC
 ↓
-PRODUCTION
+EMOTIONAL ARC
 ↓
-EMOTIONAL DIRECTION
+PRODUCTION CHARACTER
 ↓
-SPECIFIC DETAILS
+SECONDARY DETAILS
 ```
 
-For example:
-
-```text
-Dark emotional electropop
-with cinematic synth-pop influence,
-intimate restrained male vocals,
-warm analog synths and deep sub bass,
-tight electronic drums,
-minimal verses,
-expansive melodic choruses,
-layered harmonies,
-wide atmospheric production,
-strong emotional escalation,
-polished modern mix.
-```
-
-Specificity is useful when it communicates something meaningful.
-
-Over-specification can become counterproductive when the instructions conflict with one another.
-
----
-
-# 🎚️ ADVANCED CREATIVE CONTROLS
-
-Suno's creative controls influence how strongly the system follows or explores different aspects of the supplied material.
-
-These controls should be understood as interacting variables rather than independent magic switches.
-
-## VARIETY
-
-Variety controls how much variation is introduced into the generation.
-
-A lower Variety setting is useful when maintaining stronger control over the supplied style direction is important.
-
-At or near zero, the style instructions are given maximum consistency.
-
-Higher Variety can produce more divergence and unexpected interpretations.
-
-Conceptually:
-
-```text
-VARIETY 0
-↓
-Maximum stylistic consistency
-Less exploration
-
-VARIETY HIGH
-↓
-More variation
-More exploration
-Greater unpredictability
-```
-
-Variety can be particularly useful when the objective changes from **reproduction** to **discovery**.
-
-## WEIRDNESS
-
-Weirdness controls the degree of creative unpredictability.
-
-The scale can be thought of as:
-
-```text
-SAFE ←──────────────→ CHAOS
-```
-
-Around 50% represents the normal midpoint.
-
-Lower values generally favor safer interpretations.
-
-Higher values encourage more unusual outcomes.
-
-Weirdness is particularly useful when intentionally experimenting with unconventional arrangements, melodies, transitions, or sonic combinations.
-
-## STYLE INFLUENCE
-
-Style Influence controls how strongly Suno follows the supplied Style direction.
-
-Conceptually:
-
-```text
-LOOSE ←──────────────→ STRONG
-```
-
-Lower settings allow greater interpretation.
-
-Higher settings push the generation more strongly toward the supplied style description.
-
-A high Style Influence setting can therefore be useful when the Style Box contains carefully designed musical instructions.
-
-## AUDIO INFLUENCE
-
-Audio Influence appears when an audio reference is supplied.
-
-It controls how strongly the supplied audio influences the resulting generation.
-
-When preserving characteristics of an uploaded reference is important, stronger Audio Influence can be useful.
-
-Conceptually:
-
-```text
-LOW
-↓
-More reinterpretation
-
-HIGH
-↓
-Stronger relationship to source audio
-```
-
-Audio Influence should not automatically be set to maximum for every situation.
-
-The correct setting depends on whether the objective is **transformation** or **preservation**.
-
-## PERSONALIZATION
-
-Personalization can incorporate established user preferences into the generation experience.
-
-It can be useful when the goal is to incorporate a recognizable personal musical taste.
-
-It can also be undesirable during highly controlled experiments where unrelated preferences could influence the result.
-
-For surgical testing, eliminating unnecessary variables can make results easier to evaluate.
-
-## MAX MODE
-
-Max Mode is intended for situations where additional generation capability is worth the additional cost.
-
-Suno specifically describes it as useful for longer songs, covers where closeness matters, style transfer, and situations where consistent vocals or style are important.
-
-A practical workflow is:
-
-```text
-TESTING
-↓
-Normal generation
-↓
-Identify strongest direction
-↓
-KEEPER GENERATION
-↓
-Max Mode when appropriate
-```
-
-Max Mode should not automatically be treated as "better" for every generation.
-
-It is a tool for specific situations.
-
----
-
-# 🔗 HOW THE CONTROLS INTERACT
-
-The most important concept is that the controls do not operate in isolation.
-
-A useful mental model is:
-
-```text
-LYRICS
-   +
-STYLE
-   +
-AUDIO / REFERENCE
-   ↓
-VARIETY
-PERSONALIZATION
-WEIRDNESS
-STYLE INFLUENCE
-AUDIO INFLUENCE
-MAX MODE
-   ↓
-CREATION OPERATION
-   ↓
-RESULT
-```
-
-Changing one variable can change how another instruction is perceived.
-
-For example, an extremely strong Style Influence combined with high Weirdness may create a result that is simultaneously highly stylistic and highly unpredictable.
-
-Likewise, a strong Audio Influence combined with low Variety may be appropriate when attempting to remain close to a reference.
-
-The correct workflow is therefore to change variables deliberately rather than randomly changing every slider after every generation.
-
----
-
-# 🛠️ CREATION TOOLS
-
-Suno's creation tools allow existing musical material to become the starting point for new generations.
-
-The major concepts include:
-
-```text
-Create
-Cover
-Extend
-Inspo
-Mashup
-Sample
-Edit Vocals
-Edit Instruments
-Replace Section
-Add Stem
-```
-
-Each operation solves a different problem.
-
----
-
-# 🔄 COVER
-
-Cover is intended for significant transformations of an existing song while retaining important elements of its identity.
-
-It is useful when the goal is something like:
-
-```text
-Same song
-+
-Different genre
-+
-Different instrumentation
-+
-Different vocal interpretation
-```
-
-Cover should generally be used when the desired transformation affects the overall musical interpretation.
-
-For smaller changes, editing tools may be more appropriate.
-
----
-
-# ➕ EXTEND
-
-Extend continues an existing song.
-
-It is useful for:
-
-```text
-Adding another verse
-Creating a longer outro
-Building a new bridge
-Continuing an instrumental
-Expanding the arrangement
-```
-
-Extend is fundamentally a continuation operation rather than a complete reinterpretation.
-
----
-
-# 💡 INSPO
-
-Inspo is useful when the objective is to create something inspired by a musical direction rather than directly editing a specific existing section.
-
-It can function as a starting point for:
-
-```text
-Genre exploration
-Mood exploration
-Production exploration
-Song concept development
-```
-
----
-
-# 🔀 MASHUP
-
-Mashup combines two songs into a new generation.
-
-This can be used to explore relationships between:
-
-```text
-Different genres
-Different arrangements
-Different melodies
-Different vocal ideas
-Different production styles
-```
-
-Mashup should be treated as a creative recombination tool rather than simply a blending effect.
-
----
-
-# 🎵 SAMPLE
-
-Sample takes a selected portion of an existing song and uses it as a creative jumping-off point.
-
-This can be particularly useful when a song contains a:
-
-```text
-Riff
-Groove
-Melodic fragment
-Instrumental section
-Interesting texture
-Rhythmic idea
-```
-
-Sample is therefore useful for extracting a creative idea without necessarily rebuilding the entire original song.
-
----
-
-# 🧩 ADD STEM
-
-Add Stem and Get Stems should not be confused.
-
-**Add Stem** is a generative layer operation.
-
-It can be used to add another musical component to an existing production.
-
-Conceptually:
-
-```text
-Existing Song
-+
-Generated Instrument / Musical Layer
-=
-Expanded Arrangement
-```
-
----
-
-# 🎚️ EDITING TOOLS
-
-Editing should be used surgically whenever possible.
-
-If only one part of a song is wrong, rebuilding the entire song may unnecessarily change parts that were already successful.
-
-A practical decision tree is:
-
-```text
-VOCAL PROBLEM
-→ Edit Vocals
-
-INSTRUMENT PROBLEM
-→ Edit Instruments
-
-ONE BAD SECTION
-→ Replace Section
-
-NEED MORE SONG
-→ Extend
-
-REMOVE PART
-→ Remove Section
-
-WHOLE INTERPRETATION NEEDS TO CHANGE
-→ Cover
-
-COMBINE TWO SONGS
-→ Mashup
-
-USE A SPECIFIC MUSICAL FRAGMENT
-→ Sample
-
-QUICK SONIC POLISH
-→ Remaster
-```
-
-This is one of the most important concepts in advanced Suno workflows.
-
-**Do not rebuild what can be surgically repaired.**
-
----
-
-# ✂️ REPLACE SECTION
-
-Replace Section is designed for modifying a specific part of a song.
-
-Instead of regenerating the entire track, a selected region can be replaced.
-
-This is useful for:
-
-```text
-Bad chorus
-Weak transition
-Wrong instrumental section
-Unwanted vocal phrase
-Arrangement problem
-Performance issue
-```
-
-The surrounding song can remain intact while the problematic section is regenerated.
-
----
-
-# 🎤 EDIT VOCALS
-
-Edit Vocals is intended for vocal-specific modifications.
-
-This is preferable when the instrumental arrangement is already strong but the vocal performance needs adjustment.
-
-Potential use cases include:
-
-```text
-Changing vocal delivery
-Correcting vocal interpretation
-Altering vocal character
-Changing a vocal section
-Exploring a different vocal performance
-```
-
----
-
-# 🎸 EDIT INSTRUMENTS
-
-Edit Instruments is intended for instrumental-specific changes.
-
-This is useful when:
-
-```text
-The vocal is correct
-The arrangement is mostly correct
-One instrument is wrong
-An instrumental section needs changing
-The production needs a different musical layer
-```
-
-This makes it possible to work on the instrumental without unnecessarily rebuilding the entire vocal performance.
-
----
-
-# 🎛️ REMASTER
-
-Remaster is primarily a refinement tool.
-
-It is useful for subtle variations and sonic improvements involving areas such as:
-
-```text
-Mix balance
-Clarity
-Polish
-Overall sonic presentation
-```
-
-Remaster includes a model selector and variation strength options such as:
-
-```text
-Subtle
-Normal
-High
-```
-
-Remaster should generally be thought of as **polishing an existing result**, not completely reinventing it.
-
-For major transformations, Cover or other creation tools are more appropriate.
-
----
-
-# 🎚️ STRENGTH STRATEGY
-
-A useful workflow is:
-
-```text
-SUBTLE
-↓
-Small sonic refinement
-
-NORMAL
-↓
-Moderate variation
-
-HIGH
-↓
-More noticeable remaster variation
-```
-
-When the song is already excellent, start conservatively.
-
----
-
-# 🎛️ STEMS & PRODUCTION
-
-Suno can separate songs into individual stems.
-
-Depending on the available functionality, stems can include components such as:
-
-```text
-Vocals
-Drums
-Bass
-Guitar
-Keys
-Other instruments
-```
-
-Advanced stem separation can provide a much larger number of instrument choices.
-
-This enables workflows that move beyond Suno generation into traditional production.
-
-A typical workflow can become:
-
-```text
-SUNO GENERATION
-↓
-GET STEMS
-↓
-SEPARATE COMPONENTS
-↓
-DAW
-↓
-MIX
-↓
-EDIT
-↓
-MASTER
-```
-
----
-
-# 🧱 GET STEMS VS ADD STEM
-
-These two operations have fundamentally different purposes.
-
-```text
-GET STEMS
-↓
-Extract components from an existing song.
-
-ADD STEM
-↓
-Generate and add a new musical layer.
-```
-
-Understanding this distinction prevents confusion when designing production workflows.
-
----
-
-# 🎤 VOCAL DIRECTION
-
-Vocals can be described through multiple dimensions.
-
-A useful vocal prompt can communicate:
-
-```text
-Gender / vocal range
-Age impression
-Tone
-Texture
-Breathiness
-Intensity
-Emotional state
-Phrasing
-Articulation
-Dynamics
-Harmony
-Backing vocals
-Ad-libs
-Whispers
-Spoken delivery
-```
-
-Instead of:
-
-```text
-Male singer.
-```
-
-A more descriptive direction might be:
-
-```text
-Intimate emotional male lead vocal,
-restrained and vulnerable in the verses,
-gradually increasing intensity through the pre-chorus,
-full expressive delivery in the chorus,
-breathy close-mic character,
-subtle layered harmonies,
-restrained ad-libs,
-emotionally cracked delivery during the final chorus.
-```
-
-The goal is to communicate performance rather than simply identify a singer category.
-
----
-
-# 🎼 INSTRUMENTATION & ARRANGEMENT
-
-Instrumentation should describe not only which instruments exist, but how they behave.
-
-For example:
-
-```text
-Warm analog synth pad
-+
-Muted electronic kick
-+
-Deep controlled sub bass
-+
-Sparse verse percussion
-+
-Expanding pre-chorus texture
-+
-Wide layered chorus synths
-+
-Additional counter-melody in final chorus
-```
-
-Arrangement can be communicated through progression:
-
-```text
-Minimal intro
-↓
-Sparse verse
-↓
-Growing pre-chorus
-↓
-Wide chorus
-↓
-Reduced second verse
-↓
-Larger second chorus
-↓
-Instrumental bridge
-↓
-Maximum-energy final chorus
-↓
-Stripped outro
-```
-
-This gives Suno a musical trajectory rather than a static instrument list.
-
----
-
-# 🔥 DYNAMICS
-
-One of the most useful concepts in advanced prompting is contrast.
-
-A song becomes more emotionally effective when different sections have different energy levels.
-
-A prompt might communicate:
-
-```text
-Restrained verses,
-gradually increasing tension,
-explosive melodic chorus,
-brief breakdown,
-then an even larger final chorus.
-```
-
-This is generally more useful than simply saying:
-
-```text
-Very emotional and powerful.
-```
-
-Dynamic instructions communicate **when** the energy should change.
-
----
-
-# 🌌 ATMOSPHERE
-
-Atmosphere can be communicated using combinations of:
-
-```text
-Dark
-Warm
-Cold
-Dreamlike
-Cinematic
-Intimate
-Expansive
-Claustrophobic
-Ethereal
-Nostalgic
-Mechanical
-Organic
-Lo-fi
-Polished
-Raw
-Futuristic
-Vintage
-```
-
-Atmosphere becomes more effective when paired with concrete sonic characteristics.
-
-For example:
-
-```text
-Dark intimate atmosphere
-with warm analog synthesizers,
-soft room ambience,
-deep sub bass,
-close vocal recording,
-and a wide cinematic chorus.
-```
-
----
-
-# 🧬 GENRE FUSION
-
-Genre fusion works best when the roles of the genres are clear.
-
-Instead of:
-
-```text
-Pop rock hip hop EDM country jazz metal.
-```
-
-Use a hierarchy:
-
-```text
-Core genre:
-Alternative electropop
-
-Secondary influence:
-2000s synth-pop
-
-Rhythmic influence:
-Modern electronic pop
-
-Atmospheric influence:
-Cinematic ambient
-
-Vocal influence:
-Emotional indie-pop
-```
-
-This gives the generation a center of gravity.
-
-Genre fusion should feel intentional rather than like a random collection of tags.
-
----
-
-# 🏗️ GENRE FUSION TEMPLATE
-
-```text
-PRIMARY GENRE:
-[core identity]
-
-SECONDARY GENRE:
-[major influence]
-
-RHYTHMIC INFLUENCE:
-[groove / drum influence]
-
-INSTRUMENTAL INFLUENCE:
-[instrument palette]
-
-VOCAL INFLUENCE:
-[vocal character]
-
-PRODUCTION INFLUENCE:
-[sonic aesthetic]
-
-EMOTIONAL DIRECTION:
-[emotional target]
-```
+Use verbs such as `preserve`, `retain`, `maintain`, `introduce`, `reduce`, `build`, `strip away`, `return to`, `transition into`, `replace only`, `do not change` and `make the final chorus larger`.
 
 Example:
 
 ```text
-Primary genre: cinematic electropop
-Secondary influence: alternative synth-pop
-Rhythmic influence: modern electronic pop
-Instrumental influence: analog synthesizers and atmospheric guitar
-Vocal influence: intimate emotional male vocal
-Production influence: polished wide modern mix
-Emotional direction: melancholic, vulnerable, escalating into catharsis
+Preserve the existing vocal identity, tempo, harmonic movement and emotional tone. Replace the drum production with tight modern electronic drums. Keep the bass role intact. Increase chorus width and impact without changing the chorus melody. Reduce verse instrumentation so the vocal remains exposed. Make the final chorus the largest section.
+```
+
+This communicates relationships between musical states instead of merely listing adjectives.
+
+---
+
+## 🔬 A/B TESTING
+
+To understand V6, change one major variable at a time. Keep Lyrics, Style, model and reference audio constant while changing only Style Influence. Then compare. Repeat with Variety, Weirdness or Audio Influence.
+
+Do not compare two generations where every input changed and then claim to know which setting caused the difference.
+
+A useful experiment record is:
+
+```text
+TITLE:
+MODEL:
+VARIETY:
+WEIRDNESS:
+STYLE INFLUENCE:
+AUDIO INFLUENCE:
+PERSONALIZATION:
+MAX MODE:
+REFERENCE:
+LYRICS:
+STYLE:
+EXCLUDE:
+RESULT:
+WHAT WORKED:
+WHAT FAILED:
+NEXT CHANGE:
+```
+
+This turns random experimentation into a repeatable V6 knowledge base.
+
+---
+
+## 🧬 CONTROLLED COVER WORKFLOW
+
+For a controlled Cover, decide what must remain and what must change before generating.
+
+```text
+MODEL: V6
+VARIETY: 0%
+STYLE INFLUENCE: 85% to 95%
+AUDIO INFLUENCE: 90% to 100%
+WEIRDNESS: 30% to 40%
+PERSONALIZATION: OFF when strict control matters
+MAX MODE: ON when fidelity and consistency are critical
+```
+
+Then explicitly separate preservation from transformation.
+
+```text
+Transform the existing song into dark cinematic electropop while preserving the core melodic identity, emotional progression, vocal character and recognizable chorus. Replace the original instrumentation with warm analog synths, deep controlled electronic bass and tight modern drums. Keep the chorus melody recognizable and make the final chorus wider and more powerful.
 ```
 
 ---
 
-# 🎚️ PRODUCTION & SONIC DIRECTION
-
-Production prompts can describe the final sonic presentation.
-
-Useful dimensions include:
+## 🔬 CONTROLLED GENERATION WORKFLOW
 
 ```text
-Mix width
-Stereo image
-Bass depth
-Vocal placement
-Drum punch
-Compression character
-Reverb
-Delay
-Analog warmth
-Digital precision
-Lo-fi texture
-High-frequency clarity
-Low-end control
-Mastering intensity
+DEFINE IDEA
+↓
+WRITE LYRICS
+↓
+BUILD STYLE
+↓
+SELECT MODEL
+↓
+SET ADVANCED OPTIONS
+↓
+SET SLIDERS
+↓
+GENERATE TESTS
+↓
+SELECT STRONGEST RESULT
+↓
+CHANGE ONE VARIABLE
+↓
+GENERATE AGAIN
+↓
+LOCK THE DIRECTION
+↓
+USE MAX MODE WHEN APPROPRIATE
+↓
+SURGICAL EDITING
+↓
+STEMS / STUDIO
+↓
+REMASTER OR FINAL MASTER
 ```
 
-A production description might be:
-
-```text
-Wide modern stereo image,
-tight controlled low end,
-punchy electronic drums,
-warm analog synth character,
-intimate centered lead vocal,
-subtle stereo ambience,
-layered chorus vocals,
-clean high-frequency detail,
-polished commercial master without excessive loudness.
-```
+The goal is convergence, not endless random generation.
 
 ---
 
-# 🧪 EXPERIMENTAL PROMPTING
+## 🚨 TROUBLESHOOTING
 
-Experimental prompting should be treated as controlled experimentation.
+If V6 ignores Style, reduce Variety, simplify Style, increase Style Influence and remove contradictions. If the result remains unstable, simplify before adding more instructions.
 
-Change one meaningful variable at a time when trying to determine what actually affects the result.
+If the song sounds generic, add distinctive instrumentation, vocal character, arrangement behavior and production identity instead of simply adding more genre names.
 
-For example:
+If the song is muddy, request clean low end, controlled sub bass, kick and bass separation, reduced low-mid density and a vocal-forward center image. If that does not solve it, use stems and Studio or an external DAW.
 
-```text
-Generation A
-Variety: 0
-Weirdness: 30
-Style Influence: 90
+If vocals are buried, request vocal-forward mixing, clear diction, controlled accompaniment and reduced instrumental density beneath important lyric lines.
 
-Generation B
-Variety: 0
-Weirdness: 50
-Style Influence: 90
-```
+If vocals change too much, reduce Variety, increase Style Influence, stabilize vocal wording and consider Max Mode for long tracks.
 
-If B produces a dramatically different result, Weirdness becomes a more plausible explanation than changing five settings simultaneously.
+If the chorus changes, repeat identical lyrics and labels, explicitly request chorus identity preservation, lower Variety and Weirdness and increase Style Influence. For exact repetition, duplicate the successful audio region in Studio or a DAW.
 
-This approach makes experimentation reproducible.
+If unwanted instruments appear, use Exclude and positively describe the desired instrumentation.
+
+If a Cover changes too much, increase Audio Influence when available, reduce Variety, strengthen Style Influence and use Max Mode when fidelity matters.
+
+If Remaster changes too much, use Subtle.
+
+If one section is wrong, edit the section instead of regenerating the entire song.
 
 ---
 
-# 🔬 A/B TESTING
+## 🏆 MASTER V6 POP PRESET
 
-A/B testing is useful for determining whether a prompt or setting actually improves a result.
-
-Keep as many variables identical as possible.
+For a controlled emotional electropop starting point:
 
 ```text
-TEST A
-Same lyrics
-Same model
-Same Style
-Same audio
-Different Weirdness
-
-TEST B
-Same lyrics
-Same model
-Same Style
-Same audio
-Different Weirdness
+MODEL: V6
+VARIETY: 0%
+WEIRDNESS: 30% to 40%
+STYLE INFLUENCE: 90%
+AUDIO INFLUENCE: 90% to 100% when preserving a source
+PERSONALIZATION: OFF for controlled experiments
+MAX MODE: ON for important long generations
 ```
-
-Avoid changing:
 
 ```text
-Model
-Lyrics
-Style
-Audio
-Variety
-Weirdness
-Style Influence
-Audio Influence
+Modern emotional electropop with cinematic synth-pop influence, intimate expressive male lead vocal, warm analog synthesizers, controlled sub bass, tight electronic drums, clean percussion, sparse intimate verses, tension-building pre-choruses, huge melodic choruses, layered vocal harmonies, wide atmospheric synths, strong dynamic contrast, vocal-forward center image, clean low end, defined kick and bass separation, controlled reverb, open smooth high end, preserved transient punch, polished modern commercial production.
 ```
 
-all at the same time if the goal is to learn which variable caused the difference.
+This is a practical starting framework, not an official Suno preset.
 
 ---
 
-# 🔁 ITERATION STRATEGY
+## 👑 THE V6 GOD WORKFLOW
 
-Advanced Suno creation is often iterative.
-
-The first generation does not necessarily need to be the final song.
-
-A productive workflow is:
+The highest level V6 workflow is not one secret prompt. It is control of the entire chain.
 
 ```text
 IDEA
 ↓
-FIRST GENERATION
+REFERENCE
 ↓
-IDENTIFY WHAT WORKS
+MODEL
 ↓
-IDENTIFY WHAT FAILS
+LYRICS
 ↓
-SURGICAL EDIT
+STYLE
 ↓
-GENERATE AGAIN
+ADVANCED OPTIONS
 ↓
-COMPARE
+SLIDERS
 ↓
-KEEP BEST VERSION
+GENERATION
 ↓
-REFINE
+SELECTION
+↓
+SURGICAL EDITING
+↓
+STEMS
+↓
+STUDIO
+↓
+REMASTER
+↓
+FINAL MASTER
 ```
 
-The most important habit is to preserve successful elements.
+Use V6 when you know what you want. Use V6-WILD when you want discovery. Use V6-MINI for fast testing. Use low Variety for control. Use Weirdness intentionally. Use Style Influence to enforce musical identity. Use Audio Influence to control source relationship. Use Personalization when you want learned taste and remove it when you want clean experiments. Use Max Mode when fidelity and long-form consistency justify it.
 
-Do not destroy a great vocal because the snare is wrong.
+Most importantly, preserve successful information. A great chorus should not be repeatedly reinvented. A great vocal should be protected. A great instrumental should be preserved when adding vocals. A great song with one bad section should be surgically repaired.
 
-Do not rebuild a great chorus because the bridge needs work.
-
-Do not replace an entire song when one section can be regenerated.
+The advanced Suno creator is not merely prompting a model. The advanced creator is directing a generative production system.
 
 ---
 
-# 🎯 SURGICAL EDITING PHILOSOPHY
+## 📚 OFFICIAL RESOURCES
 
-Think of each Suno operation as a tool with a specific scope.
+Official V6 Release: `https://suno.com/release-notes/introducing-v6`
 
-```text
-SONG LEVEL
-→ Cover
-→ Mashup
-→ Sample
-→ Inspo
+Official V6 FAQ: `https://help.suno.com/en/articles/13924481`
 
-SECTION LEVEL
-→ Replace Section
-→ Extend
-→ Remove Section
+Current V6 Models: `https://help.suno.com/en/articles/13924737`
 
-VOCAL LEVEL
-→ Edit Vocals
+What's New in V6: `https://help.suno.com/en/articles/13924801`
 
-INSTRUMENT LEVEL
-→ Edit Instruments
-→ Add Stem
+Creative Sliders: `https://help.suno.com/en/articles/6141377`
 
-SONIC REFINEMENT
-→ Remaster
+Custom Mode and Own Lyrics: `https://help.suno.com/en/articles/2415873`
 
-COMPONENT EXTRACTION
-→ Get Stems
-```
+Android Custom Mode: `https://help.suno.com/en/articles/3726721`
 
-The smaller the problem, the smaller the tool that should be used.
+Vocal Gender: `https://help.suno.com/en/articles/10153473`
 
-This principle minimizes unnecessary changes.
+Exclude: `https://help.suno.com/en/articles/3161921`
 
----
+Inspire: `https://help.suno.com/en/articles/6882753`
 
-# 🧠 PROMPT PRIORITY
+Replace Section: `https://help.suno.com/en/articles/3271873`
 
-When instructions conflict, not every instruction should be treated as equally important.
+Remaster: `https://help.suno.com/en/articles/8105281`
 
-A practical hierarchy is:
+Add Vocals: `https://help.suno.com/en/articles/6882817`
 
-```text
-CORE MUSICAL IDENTITY
-↓
-SONG STRUCTURE
-↓
-VOCAL IDENTITY
-↓
-INSTRUMENTATION
-↓
-PRODUCTION
-↓
-DETAILS
-```
+Voices: `https://help.suno.com/en/articles/11362369`
 
-If the prompt says:
+Personas: `https://help.suno.com/en/articles/3484161`
 
-```text
-Minimal intimate production
-```
+Advanced Stem Separation: `https://help.suno.com/en/articles/12702337`
 
-and later says:
+Sample and Mashup: `https://suno.com/release-notes/meet-our-new-create-features-sample-mashup`
 
-```text
-Massive orchestral wall of sound
-```
+Sounds: `https://help.suno.com/en/articles/10625537`
 
-the model has conflicting instructions.
+Studio 2.0: `https://suno.com/release-notes/studio-2`
 
-Better prompting removes contradictions.
+Studio documentation: `https://help.suno.com/en/articles/13670529`
+
+Suno Release Notes: `https://suno.com/release-notes`
+
+Suno Create: `https://suno.com/create`
 
 ---
 
-# 🧹 PROMPT CLEANUP
+## 📖 ACCURACY POLICY
 
-Before generating, inspect the prompt for:
+Official Suno behavior is linked wherever possible. Practical slider values, prompt structures and repeatability techniques are clearly treated as starting points rather than guarantees. V6 is a changing generative system, so important behavior should always be tested against the current model and interface.
 
-```text
-Contradictions
-Repeated instructions
-Unnecessary genre stacking
-Unclear vocal direction
-Conflicting tempo descriptions
-Conflicting production aesthetics
-Too many unrelated influences
-```
-
-A shorter coherent prompt can outperform a longer contradictory one.
+This repository should evolve with Suno. New V6 options, sliders, reference capabilities, editing tools, production tools and documented behaviors should be added without sacrificing the distinction between official documentation and observed technique.
 
 ---
 
-# 📚 PROMPT LIBRARY
+## 🏁 FINAL WORD
 
-This repository will eventually contain reusable prompts organized by purpose.
+Suno V6 becomes dramatically more powerful when Lyrics, Style, references, model selection, Advanced Options, sliders, editing and production are treated as one connected system.
 
-Future categories can include:
+The goal is not to find a magic prompt. The goal is to build a repeatable system that can create, diagnose, repair, transform and finish music with intention.
 
-```text
-Pop
-Electropop
-Synth-pop
-Indie
-Alternative
-Rock
-Hip-hop
-R&B
-Soul
-EDM
-House
-Techno
-Metal
-Country
-Acoustic
-Cinematic
-Ambient
-Experimental
-Dark Pop
-Dream Pop
-Hyperpop
-Ballads
-Soundtracks
-```
+**LIL SYNN's Complete Suno V6 Guide.**
 
-Additional prompt libraries will cover:
-
-```text
-Male vocals
-Female vocals
-Duets
-Choirs
-Whisper vocals
-Aggressive vocals
-Emotional vocals
-Layered vocals
-Backing vocals
-Harmony design
-Instrumental tracks
-Cinematic arrangements
-Retro production
-Modern production
-Lo-fi production
-High-fidelity production
-```
-
----
-
-# ✍️ FUTURE LYRICS BOX PROMPT LIBRARY
-
-A dedicated section will eventually document techniques for controlling the Lyrics Box.
-
-This will include examples for:
-
-```text
-Section behavior
-Vocal delivery
-Ad-libs
-Harmony cues
-Call and response
-Whisper sections
-Spoken sections
-Instrumental breaks
-Dynamic escalation
-Repeated hooks
-Outro behavior
-Vocal layering
-Emotional transitions
-```
-
-The goal is to develop a repeatable language for communicating performance and arrangement intent through lyrics formatting.
-
----
-
-# 🎨 FUTURE STYLE BOX TECHNIQUES
-
-A dedicated Style Box section will eventually document reusable frameworks for:
-
-```text
-Genre definition
-Genre fusion
-Vocal identity
-Instrumentation
-Arrangement
-Production
-Mix characteristics
-Atmosphere
-Dynamics
-Era references
-Recording aesthetics
-Emotional direction
-```
-
-The repository will distinguish between **generic prompt theory** and **tested practical techniques** whenever possible.
-
----
-
-# 🧪 EXPERIMENTAL TECHNIQUES
-
-Experimental techniques will be documented separately from established workflows.
-
-This distinction matters.
-
-A technique that produces interesting results once should not automatically be presented as guaranteed behavior.
-
-Experimental documentation should identify:
-
-```text
-What was attempted
-What inputs were used
-What settings were used
-What happened
-Whether the result was repeatable
-What limitations were observed
-```
-
-This creates a useful experimental record instead of turning speculation into "Suno facts."
-
----
-
-# 🛠️ TROUBLESHOOTING
-
-When a generation is bad, diagnose the problem before changing everything.
-
-Ask:
-
-```text
-Was the model appropriate?
-
-Was the Style prompt clear?
-
-Was the Lyrics structure clear?
-
-Was the audio reference appropriate?
-
-Was Variety too high?
-
-Was Weirdness too high?
-
-Was Style Influence too low?
-
-Was Audio Influence too low?
-
-Was Personalization influencing the result?
-
-Would a different operation be more appropriate?
-
-Does the problem affect the entire song or only one section?
-```
-
-The answer determines the next action.
-
----
-
-# 🚨 COMMON MISTAKE: CHANGING EVERYTHING
-
-A common failure mode is:
-
-```text
-Bad generation
-↓
-Change model
-↓
-Rewrite lyrics
-↓
-Rewrite Style
-↓
-Change all sliders
-↓
-Upload new audio
-↓
-Generate again
-```
-
-At that point it becomes impossible to know what actually solved the problem.
-
-A better workflow is:
-
-```text
-Identify ONE problem
-↓
-Change ONE meaningful variable
-↓
-Generate
-↓
-Compare
-↓
-Continue
-```
-
----
-
-# 🎯 CONTROLLED COVER WORKFLOW
-
-For a cover where maintaining the source identity is important, a practical starting point can be:
-
-```text
-MODEL:
-V6
-
-VARIETY:
-0%
-
-STYLE INFLUENCE:
-85–95%
-
-AUDIO INFLUENCE:
-90–100%
-
-WEIRDNESS:
-30–40%
-
-PERSONALIZATION:
-OFF when strict source control is desired
-
-MAX MODE:
-Use when the final generation requires it
-```
-
-These are **practical starting recommendations**, not guaranteed or official magic settings.
-
-The correct values depend on the source material and desired transformation.
-
----
-
-# 🎚️ CONTROLLED GENERATION WORKFLOW
-
-A controlled generation can follow:
-
-```text
-1. Choose V6.
-
-2. Establish the core genre.
-
-3. Define the vocal identity.
-
-4. Define instrumentation.
-
-5. Define arrangement.
-
-6. Define production.
-
-7. Set Variety according to the desired amount of exploration.
-
-8. Set Weirdness according to the desired amount of unpredictability.
-
-9. Set Style Influence according to how strongly the Style prompt should dominate.
-
-10. Set Audio Influence when an audio reference is being used.
-
-11. Decide whether Personalization should contribute.
-
-12. Generate.
-
-13. Identify the strongest result.
-
-14. Surgically edit problems instead of rebuilding unnecessarily.
-
-15. Remaster only after the underlying musical result is correct.
-
-16. Extract stems when moving into external production.
-```
-
----
-
-# 🧠 THE SUNO CREATION MATRIX
-
-The entire system can be understood as several layers.
-
-```text
-┌──────────────────────────────────────┐
-│              INPUTS                  │
-│ Lyrics • Style • Audio • References  │
-└──────────────────┬───────────────────┘
-                   ↓
-┌──────────────────────────────────────┐
-│          CREATIVE CONTROLS           │
-│ Variety • Weirdness • Style Influence│
-│ Audio Influence • Personalization    │
-│ Max Mode                              │
-└──────────────────┬───────────────────┘
-                   ↓
-┌──────────────────────────────────────┐
-│             OPERATION                │
-│ Create • Cover • Extend • Inspo      │
-│ Mashup • Sample • Edit • Replace     │
-│ Add Stem                             │
-└──────────────────┬───────────────────┘
-                   ↓
-┌──────────────────────────────────────┐
-│              RESULT                  │
-│          Generated Music              │
-└──────────────────┬───────────────────┘
-                   ↓
-┌──────────────────────────────────────┐
-│          REFINEMENT                  │
-│ Edit • Replace • Extend • Remaster   │
-│ Get Stems • Export • Production      │
-└──────────────────────────────────────┘
-```
-
-This model is useful because it separates **what you provide**, **how strongly you want it interpreted**, **what operation you are performing**, and **what you do afterward**.
-
----
-
-# 📈 ITERATIVE CREATION LOOP
-
-The advanced workflow is ultimately a loop:
-
-```text
-CREATE
-↓
-LISTEN
-↓
-ANALYZE
-↓
-IDENTIFY PROBLEM
-↓
-SELECT APPROPRIATE TOOL
-↓
-EDIT
-↓
-LISTEN AGAIN
-↓
-COMPARE
-↓
-KEEP / REJECT
-↓
-REFINE
-```
-
-This is fundamentally different from repeatedly pressing Generate and hoping for a better song.
-
----
-
-# 🧪 DOCUMENTATION STANDARD
-
-Whenever possible, experimental techniques in this repository should distinguish between:
-
-**VERIFIED**
-
-Behavior documented by Suno or consistently observed through testing.
-
-**PRACTICAL**
-
-A technique that has proven useful but should not be treated as an official rule.
-
-**EXPERIMENTAL**
-
-A technique that produces interesting results but requires additional testing.
-
-**SPECULATIVE**
-
-A hypothesis about why a behavior occurs that has not been adequately verified.
-
-This prevents the repository from becoming a collection of unsupported claims.
-
----
-
-# 📌 ACCURACY POLICY
-
-Suno changes rapidly.
-
-Features, models, controls, credit behavior, interfaces, and generation capabilities can change over time.
-
-This repository should therefore avoid presenting temporary interface behavior as permanent fact.
-
-Official Suno documentation should be preferred when documenting confirmed functionality.
-
-Practical prompting techniques should be labeled as techniques rather than official Suno behavior.
-
-Screenshots and interface observations should be treated as time-specific evidence.
-
----
-
-# 🚀 FUTURE EXPANSION
-
-This repository is intentionally incomplete.
-
-Future additions will expand into:
-
-```text
-Advanced Lyrics Box prompting
-Advanced Style Box prompting
-Genre-specific prompt libraries
-Vocal prompt libraries
-Instrument prompt libraries
-Arrangement templates
-Production templates
-Song structure templates
-Cover workflows
-Remix workflows
-Mashup workflows
-Sample workflows
-Stem workflows
-Custom model workflows
-Personalization workflows
-Audio-reference workflows
-Image-reference workflows
-Video-reference workflows
-Prompt testing methodology
-A/B testing
-Advanced editing strategies
-DAW workflows
-Mastering workflows
-Troubleshooting databases
-Community-tested prompts
-```
-
-The objective is for this repository to become a living reference rather than a static tutorial.
-
----
-
-# 🔗 OFFICIAL SUNO RESOURCES
-
-## Suno V6 Announcement
-
-https://suno.com/release-notes/introducing-v6
-
-## V6 FAQ
-
-https://help.suno.com/en/articles/13924481
-
-## Current Suno Models
-
-https://help.suno.com/en/articles/13924737
-
-## What's New in V6
-
-https://help.suno.com/en/articles/13924801
-
-## Changing Models
-
-https://help.suno.com/en/articles/13924993
-
-## Creative Sliders
-
-https://help.suno.com/en/articles/6141377
-
-## Song Editor
-
-https://help.suno.com/en/articles/6141505
-
-## Stems
-
-https://help.suno.com/en/articles/13925185
-
-## Remaster
-
-https://help.suno.com/en/articles/8105281
-
-## Sample & Mashup
-
-https://suno.com/release-notes/meet-our-new-create-features-sample-mashup
-
-## Song Length
-
-https://help.suno.com/en/articles/13924929
-
-## Custom Models
-
-https://help.suno.com/en/articles/11362497
-
----
-
-# 🧭 REPOSITORY PHILOSOPHY
-
-Suno is not simply a button that generates a song.
-
-It is a layered creative system.
-
-The strongest results come from understanding the relationship between:
-
-```text
-Lyrics
-+
-Style
-+
-References
-+
-Creative Controls
-+
-Models
-+
-Creation Operations
-+
-Editing
-+
-Iteration
-+
-Production
-```
-
-The purpose of this repository is to document that entire ecosystem.
-
-Not just **what Suno can do**.
-
-But **how to use it deliberately**.
-
----
-
-# 🎵 EVERYTHING SUNO
-
-This repository will continue expanding as Suno evolves.
-
-New models will be documented.
-
-New controls will be tested.
-
-New prompting techniques will be added.
-
-New editing workflows will be developed.
-
-New discoveries will be separated from confirmed behavior.
-
-The ultimate goal is simple:
-
-```text
-UNDERSTAND THE SYSTEM
-        ↓
-CONTROL THE GENERATION
-        ↓
-REFINE THE RESULT
-        ↓
-MAKE BETTER MUSIC
-```
-
-**Suno is the instrument.**
-
-**Prompting is the language.**
-
-**Iteration is the workflow.**
-
-**Production is the finish.**
-
-And this repository is intended to document all of it.
+**Everything Suno. One place. Advanced mode first. Production all the way through.**
