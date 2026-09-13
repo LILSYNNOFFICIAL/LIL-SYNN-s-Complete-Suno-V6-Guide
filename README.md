@@ -13,6 +13,7 @@ The main guide is supplemented by dedicated current-reference layers so the repo
 - **[SUNO-V6-EVERYTHING-EXPANSION.md](SUNO-V6-EVERYTHING-EXPANSION.md)** — broad V6 controls, prompting, production, testing, rights, workflows, and ecosystem coverage.
 - **[SUNO-V6-FINAL-CURRENT-EXPANSION.md](SUNO-V6-FINAL-CURRENT-EXPANSION.md)** — current V6 ecosystem expansion covering the latest model, Studio, multimodal, mobile, playlist, stem, visual, and release-note areas.
 - **[SUNO-V6-CURRENT-GAPS-CLOSURE.md](SUNO-V6-CURRENT-GAPS-CLOSURE.md)** — remaining current-reference coverage: detailed control testing, upload/Voice/Custom Model discipline, editing decision maps, Studio operational details, mobile/web differences, downloads/rights, current ecosystem features, troubleshooting, and the final ALL/EVERYTHING audit checklist.
+- **[SUNO-V6-ADDITIONAL-CURRENT-DETAILS.md](SUNO-V6-ADDITIONAL-CURRENT-DETAILS.md)** — current operational details including exact documented stem-extraction costs, Song Editor operations, Extend/Crop/Replace workflows, moderation, Workspaces, Music Glossary, Studio Library, Remove FX, and current Voice-input details.
 
 ---
 
@@ -149,4 +150,4 @@ V6-MINI = “Let me test this idea quickly.”
 
 # 🔍 CURRENT GUIDE MAINTENANCE NOTE
 
-For the newest material, always consult the three expansion files above in addition to this README. They are intentionally additive: the README remains the primary navigation and reference document, while the expansion layers hold the current depth that would otherwise make the main file unwieldy.
+For the newest material, always consult the four expansion files above in addition to this README. They are intentionally additive: the README remains the primary navigation and reference document, while the expansion layers hold the current depth that would otherwise make the main file unwieldy.
