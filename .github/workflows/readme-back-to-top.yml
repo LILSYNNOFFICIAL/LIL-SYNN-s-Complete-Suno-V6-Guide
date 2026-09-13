@@ -5,11 +5,8 @@ on:
     branches:
       - main
     paths:
-      - README.md
-      - SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md
-      - docs/superpowers/plans/2026-09-13-suno-v6-complete-upgrade.md
-      - docs/superpowers/plans/readme-maintenance-trigger.md
-      - .github/workflows/readme-back-to-top.yml
+      - '**.md'
+      - '.github/workflows/readme-back-to-top.yml'
 
 permissions:
   contents: write
@@ -22,41 +19,33 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Clean citation markup and add upgrade navigation
+      - name: Clean ChatGPT citation glyphs from Markdown
         shell: python
         run: |
           from pathlib import Path
           import re
 
-          path = Path('README.md')
-          text = path.read_text(encoding='utf-8')
+          for path in Path('.').rglob('*.md'):
+              if '.git' in path.parts:
+                  continue
+              text = path.read_text(encoding='utf-8')
 
-          text = re.sub(
-              r'url([^]+)(https?://[^]+)',
-              lambda m: f'[{m.group(1)}]({m.group(2)})',
-              text,
-          )
-          text = re.sub(r'cite[^]+', '', text)
-          text = re.sub(r'\n{3,}', '\n\n', text)
+              # Convert supported ChatGPT URL citations to ordinary Markdown links.
+              text = re.sub(
+                  r'url([^]+)(https?://[^]+)',
+                  lambda m: f'[{m.group(1)}]({m.group(2)})',
+                  text,
+              )
+              # Remove citation-only constructs when no destination is available.
+              text = re.sub(r'cite[^]+', '', text)
+              # Remove any leftover ChatGPT citation glyphs so they can never appear
+              # as literal characters in the repository's Markdown.
+              text = text.replace('', '').replace('', '')
 
-          addendum_path = 'SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md'
-          addendum_line = f'- **[{addendum_path}]({addendum_path})** — the 2026 ultimate control, testing, Studio 2.0, diagnostic, rights, platform and Creator\'s Operating System addendum.'
+              text = re.sub(r'\n{3,}', '\n\n', text)
+              path.write_text(text.rstrip() + '\n', encoding='utf-8')
 
-          if addendum_line not in text:
-              marker = '## Deep-Dive Expansion Files'
-              if marker in text:
-                  text = text.replace(marker, marker + '\n\n' + addendum_line, 1)
-              else:
-                  text += f'\n\n## 🧩 2026 Ultimate Upgrade\n\n{addendum_line}\n'
-
-          quick_nav_marker = '- [Accuracy Policy](#-accuracy-policy)'
-          quick_nav_upgrade = '- [2026 Ultimate Control & Production Addendum](#-2026-ultimate-control--production-addendum)'
-          if quick_nav_marker in text and quick_nav_upgrade not in text:
-              text = text.replace(quick_nav_marker, quick_nav_upgrade + '\n' + quick_nav_marker, 1)
-
-          path.write_text(text.rstrip() + '\n', encoding='utf-8')
-
-      - name: Insert section back-to-top links
+      - name: Maintain README upgrade navigation
         shell: python
         run: |
           from pathlib import Path
@@ -109,33 +98,41 @@ jobs:
 
           path.write_text('\n'.join(lines).rstrip() + '\n', encoding='utf-8')
 
-      - name: Verify README content
+      - name: Verify all Markdown files
         shell: python
         run: |
           from pathlib import Path
-          text = Path('README.md').read_text(encoding='utf-8')
-          forbidden = ('cite', 'url')
-          if any(token in text for token in forbidden):
-              raise SystemExit('README still contains ChatGPT-only citation markup.')
+          forbidden = ('', '')
+          bad = []
+          for path in Path('.').rglob('*.md'):
+              if '.git' in path.parts:
+                  continue
+              text = path.read_text(encoding='utf-8')
+              if any(token in text for token in forbidden):
+                  bad.append(str(path))
+          if bad:
+              raise SystemExit('Forbidden citation glyphs remain in: ' + ', '.join(bad))
+
+          readme = Path('README.md').read_text(encoding='utf-8')
           required = (
               '<a id="top"></a>',
               'SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md',
               '⬆️ Back to top',
           )
-          missing = [token for token in required if token not in text]
+          missing = [token for token in required if token not in readme]
           if missing:
               raise SystemExit(f'README verification failed; missing: {missing}')
-          print('README verification passed.')
+          print('All Markdown glyph checks and README navigation checks passed.')
 
-      - name: Commit navigation updates
+      - name: Commit Markdown cleanup
         shell: bash
         run: |
-          if git diff --quiet -- README.md; then
-            echo "README already has complete navigation and clean Markdown links."
+          if git diff --quiet -- '*.md'; then
+            echo "Markdown is already clean."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "Maintain README navigation and GitHub links [skip ci]"
+          git add -- '*.md'
+          git commit -m "Remove stray citation glyphs from Markdown [skip ci]"
           git push
