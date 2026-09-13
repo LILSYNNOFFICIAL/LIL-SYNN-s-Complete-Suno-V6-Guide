@@ -1,0 +1,100 @@
+name: Maintain README Back-to-Top Navigation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - .github/workflows/readme-back-to-top.yml
+
+permissions:
+  contents: write
+
+jobs:
+  maintain-navigation:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Insert section back-to-top links
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path('README.md')
+          text = path.read_text(encoding='utf-8')
+
+          # GitHub supports custom HTML anchors and normal section links in Markdown.
+          # Keep one stable top target and make the navigation idempotent.
+          top_anchor = '<a id="top"></a>'
+          if not text.startswith(top_anchor):
+              text = top_anchor + '\n\n' + text.lstrip()
+
+          lines = text.splitlines()
+          sections = []
+          in_fence = False
+          fence = None
+
+          for i, line in enumerate(lines):
+              stripped = line.strip()
+              if stripped.startswith('```') or stripped.startswith('~~~'):
+                  marker = stripped[:3]
+                  if not in_fence:
+                      in_fence = True
+                      fence = marker
+                  elif marker == fence:
+                      in_fence = False
+                      fence = None
+                  continue
+              if not in_fence and line.startswith('# ') and not line.startswith('# 🎵'):
+                  sections.append(i)
+
+          # Process from bottom to top so indexes remain valid.
+          insertions = []
+          for n, start in enumerate(sections):
+              end = sections[n + 1] if n + 1 < len(sections) else len(lines)
+              block = lines[start:end]
+              if any('href="#top"' in x or '](#top)' in x for x in block):
+                  continue
+
+              # Find a natural paragraph boundary near the middle of the section,
+              # avoiding fenced code blocks.
+              midpoint = start + max(1, (end - start) // 2)
+              candidates = []
+              in_block_fence = False
+              for i in range(start + 1, end):
+                  s = lines[i].strip()
+                  if s.startswith('```') or s.startswith('~~~'):
+                      in_block_fence = not in_block_fence
+                      continue
+                  if not in_block_fence and not s and i > start + 2:
+                      candidates.append(i)
+
+              if candidates:
+                  insert_at = min(candidates, key=lambda x: abs(x - midpoint))
+              else:
+                  insert_at = midpoint
+
+              link = '<div align="right"><a href="#top">⬆️ Back to top</a></div>'
+              insertions.append((insert_at, link))
+
+          for index, link in sorted(insertions, reverse=True):
+              lines.insert(index, link)
+
+          path.write_text('\n'.join(lines).rstrip() + '\n', encoding='utf-8')
+
+      - name: Commit navigation updates
+        shell: bash
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README already has complete back-to-top navigation."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Add back-to-top navigation to README [skip ci]"
+          git push
