@@ -15,7 +15,7 @@
 - Official Suno documentation/release notes outrank older tutorials and community claims.
 - Never present undocumented prompt tricks as guaranteed commands.
 - Date-stamp current product/plan/rights information.
-- Keep GitHub README links as normal Markdown/HTML; never leave ChatGPT `url...` or `cite...` markup in repository content.
+- Keep GitHub README links as normal Markdown/HTML; never leave ChatGPT `url...` or `cite...` markup in repository content.
 - Preserve the existing `<a id="top"></a>` target and back-to-top navigation.
 - Separate OFFICIAL, RELEASE NOTE, REPRODUCIBLE, COMMUNITY, EXPERIMENTAL, UNKNOWN, and RETIRED evidence.
 - Verify the final README and new addendum after changes.
@@ -59,7 +59,7 @@
 - Verify: `SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md`
 - Verify: `.github/workflows/readme-back-to-top.yml`
 
-- [ ] Confirm no `cite` or `url` strings remain in repository Markdown.
+- [ ] Confirm no `cite` or `url` strings remain in repository Markdown.
 - [ ] Confirm the new addendum is linked from README.
 - [ ] Confirm current V6 model, Studio, downloads/rights, and mobile claims are date-stamped.
 - [ ] Confirm back-to-top target and links remain present.
