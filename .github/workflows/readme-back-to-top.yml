@@ -7,6 +7,7 @@ on:
     paths:
       - README.md
       - SUNO-V6-ULTIMATE-CONTROL-AND-PRODUCTION-ADDENDUM-2026.md
+      - docs/superpowers/plans/2026-09-13-suno-v6-complete-upgrade.md
       - .github/workflows/readme-back-to-top.yml
 
 permissions:
@@ -64,8 +65,6 @@ jobs:
           path = Path('README.md')
           text = path.read_text(encoding='utf-8')
 
-          # GitHub supports custom HTML anchors and normal section links in Markdown.
-          # Keep one stable top target and make the navigation idempotent.
           top_anchor = '<a id="top"></a>'
           if not text.startswith(top_anchor):
               text = top_anchor + '\n\n' + text.lstrip()
