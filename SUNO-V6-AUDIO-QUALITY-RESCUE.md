@@ -8,30 +8,39 @@
 
 ## 1. THE CONTROLLED RESCUE SETUP
 
-Use **V6 Mini** and isolate the test. Do not add unrelated options while diagnosing the audio problem.
+**Use V6 Mini. Do not use the other V6 models for this rescue workflow — they can change the result and defeat the controlled test.** Use the song as a **Cover**, select the **entire song from Sample**, and use the settings below exactly.
 
 ```text
 MODEL
-→ V6 Mini
+→ V6 Mini — REQUIRED
+→ Do NOT use V6, V6 Wild, or another model for this rescue workflow
 
-SOURCE
-→ Select the song as a Cover
+OPERATION / MODE
+→ Cover
+
+SOURCE / SAMPLE
 → Select the entire song from Sample
 
 WEIRDNESS
 → 0%
 
 STYLE INFLUENCE
-→ 86%
+→ 85%
 
 AUDIO INFLUENCE
-→ 86%
+→ 85%
+
+MAX MODE
+→ ON
+
+PERSONALIZE
+→ OFF
 
 OTHER OPTIONS
 → Nothing else enabled
 ```
 
-Keep Personalize off for this diagnostic pass and select the required male/female vocal setting when applicable.
+**Do not substitute another model. Do not change these values during the first controlled rescue pass.** Select the required male/female vocal setting when applicable.
 
 ---
 
@@ -50,7 +59,7 @@ The `[SND]` line is the explicit structure direction for this workflow. Do not s
 
 ## 3. STYLE BOX — FULL AUDIO-QUALITY PROMPT
 
-Put the complete prompt below in the **Style box**:
+**This entire prompt goes in the Style box. Do not put it in the Lyrics box.** Copy the complete prompt exactly:
 
 ```text
 recreate the original audio exactly as sung and performed, identical vocal timbre phrasing dynamics intensity and emotion, identical instrument playing style technique feel and arrangement, identical overall musical energy and mood, ultra-professional studio mastering, lossless hi-fi, reference-grade mix, 24-bit digital clean, dynamic range 12dB+, wide cinematic stereo imaging, crystal-clear highs, high quality bass, perfectly balanced mids, zero mud, zero muddiness, zero low-end buildup, zero artifacts, zero compression artifacts, zero digital hiss, zero clipping, no frequency pollution, no resonance, no phase issues, fully transparent final master, radio broadcast quality, concert hall clarity, warm analog depth + razor-sharp digital precision, present lead vocals, wide and airy soundstage, high-fidelity studio production, crisp transients, layered instruments with clear separation, stable tonal balance and loudness
@@ -60,21 +69,40 @@ recreate the original audio exactly as sung and performed, identical vocal timbr
 
 ---
 
-## 4. EXACT CHECKLIST
+## 4. EXACT CHECKLIST — USE THESE SETTINGS
 
 | Setting | Required value |
 |---|---|
-| Model | **V6 Mini** |
-| Mode | **Cover** |
-| Sample | **Entire song** |
-| Weirdness | **0%** |
-| Style Influence | **86%** |
-| Audio Influence | **86%** |
-| Personalize | **OFF** |
-| Other options | **Nothing else enabled** |
-| Lyrics box | **`[SND]` direction + preservation instruction** |
-| Style box | **Complete Audio Quality prompt** |
-| Vocal gender | **Male/Female as required** |
+| **Model** | **V6 Mini — REQUIRED** |
+| **Mode / Operation** | **Cover** |
+| **Sample** | **Entire song** |
+| **Weirdness** | **0%** |
+| **Style Influence** | **85%** |
+| **Audio Influence** | **85%** |
+| **Max Mode** | **ON** |
+| **Personalize** | **OFF** |
+| **Other options** | **Nothing else enabled** |
+| **Lyrics box** | **`[SND]` direction + preservation instruction** |
+| **Style box** | **Complete Audio Quality prompt — the entire prompt above** |
+| **Vocal gender** | **Male/Female as required** |
+
+### Before you generate
+
+1. **Choose V6 Mini.** Do not choose another V6 model for this workflow.
+2. Choose **Cover** as the operation.
+3. Select the **entire song from Sample**.
+4. Set **Weirdness to 0%**.
+5. Set **Style Influence to 85%**.
+6. Set **Audio Influence to 85%**.
+7. Turn **Max Mode ON**.
+8. Make sure **Personalize is OFF**.
+9. Leave **all other options disabled**.
+10. Put the `[SND]` preservation direction in the **Lyrics box**.
+11. Put the **entire long audio-quality prompt** in the **Style box**.
+12. Select the required **male/female vocal** setting.
+13. Generate the controlled test.
+
+**The placement matters:** `[SND]` goes in **Lyrics**. The long audio-quality prompt goes in **Style**. The model is **V6 Mini**. Max Mode is **ON**. Personalize is **OFF**. Weirdness is **0%**. Style Influence and Audio Influence are **85%**.
 
 ---
 
@@ -88,7 +116,7 @@ Run the controlled rescue setup first. Do not stack additional mastering languag
 
 ### B. Vocal timbre changed
 
-Verify that the entire source was selected and that the preservation language remains intact. Compare against the original at matched playback level.
+Verify that the entire source was selected, that **V6 Mini** is selected, and that the preservation language remains intact. Compare against the original at matched playback level.
 
 ### C. Instruments or arrangement drifted
 
@@ -100,18 +128,20 @@ The Style-box prompt explicitly addresses mud, muddiness, low-end buildup, frequ
 
 ### E. Excessive processing / crushed dynamics
 
-Keep Weirdness at 0% and do not enable additional options during the controlled test. The purpose is to isolate the variables rather than create another creative generation.
+Keep Weirdness at **0%**, keep **Max Mode ON**, and do not enable additional options during the controlled test. The purpose is to isolate the variables rather than create another creative generation.
 
 ---
 
 ## 6. A/B TESTING RULE
 
-Change one variable at a time.
+Change one variable at a time **only after the exact controlled setup has been tested**.
 
 ```text
 BAD V6 RESULT
      ↓
-CONTROLLED RESCUE SETUP
+V6 MINI + COVER + ENTIRE SONG + MAX MODE ON
+     ↓
+WEIRDNESS 0% + STYLE 85% + AUDIO 85% + PERSONALIZE OFF
      ↓
 COMPARE AGAINST SOURCE
      ↓
