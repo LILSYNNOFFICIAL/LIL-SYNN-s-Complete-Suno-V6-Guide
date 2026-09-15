@@ -1,1 +1,0 @@
-Corrected settings: V6 Mini only; Cover; entire song from Sample; Weirdness 0%; Style Influence 85%; Audio Influence 85%; Max Mode ON; Personalize OFF; all other options disabled. Full audio prompt belongs in Style box.
