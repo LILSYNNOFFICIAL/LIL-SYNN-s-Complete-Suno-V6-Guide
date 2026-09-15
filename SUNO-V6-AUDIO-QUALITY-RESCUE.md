@@ -1,14 +1,13 @@
 # 🎧 SUNO V6 — AUDIO QUALITY RESCUE / REFERENCE RECREATION FIX
 
 > **Operational note — September 2026**
->
 > Use this controlled setup when V6 produces unexpectedly poor audio quality from a source/reference and the goal is to preserve the original performance while improving the resulting audio quality.
 
 ---
 
 ## 1. THE CONTROLLED RESCUE SETUP
 
-**Use V6 Mini. Do not use the other V6 models for this rescue workflow — they can change the result and defeat the controlled test.** Use the song as a **Cover**, select the **entire song from Sample**, and use the settings below exactly.
+**Use V6 Mini. Do not use the other V6 models for this rescue workflow — they can change the result and defeat the controlled test. Use Sample mode, select the entire song for Sample Length, and use the settings below exactly.**
 
 ```text
 MODEL
@@ -16,10 +15,10 @@ MODEL
 → Do NOT use V6, V6 Wild, or another model for this rescue workflow
 
 OPERATION / MODE
-→ Cover
+→ Sample
 
-SOURCE / SAMPLE
-→ Select the entire song from Sample
+SAMPLE LENGTH
+→ Entire song — select the whole song
 
 WEIRDNESS
 → 0%
@@ -44,22 +43,21 @@ OTHER OPTIONS
 
 ---
 
-## 2. LYRICS BOX — `[SND]` DIRECTION
+## 2. LYRICS BOX — LYRICS ONLY
 
-Put the following structure direction in the **Lyrics box**:
+Put **ONLY the original song lyrics** in the **Lyrics box**.
+
+**Do not put `[SND]`, the audio instruction, mastering language, settings, or any other instructions in the Lyrics box.** The Lyrics box contains the song lyrics only.
 
 ```text
-[SND]
-recreate the original audio exactly as sung and performed, identical vocal timbre phrasing dynamics intensity and emotion, identical instrument playing style technique feel and arrangement, identical overall musical energy and mood
+YOUR ORIGINAL SONG LYRICS ONLY
 ```
-
-The `[SND]` line is the explicit structure direction for this workflow. Do not silently replace it with an unrelated tag or invent additional control syntax.
 
 ---
 
 ## 3. STYLE BOX — FULL AUDIO-QUALITY PROMPT
 
-**This entire prompt goes in the Style box. Do not put it in the Lyrics box.** Copy the complete prompt exactly:
+**This entire prompt goes in the Style box. Do not put it in the Lyrics box. Do not shorten it.**
 
 ```text
 recreate the original audio exactly as sung and performed, identical vocal timbre phrasing dynamics intensity and emotion, identical instrument playing style technique feel and arrangement, identical overall musical energy and mood, ultra-professional studio mastering, lossless hi-fi, reference-grade mix, 24-bit digital clean, dynamic range 12dB+, wide cinematic stereo imaging, crystal-clear highs, high quality bass, perfectly balanced mids, zero mud, zero muddiness, zero low-end buildup, zero artifacts, zero compression artifacts, zero digital hiss, zero clipping, no frequency pollution, no resonance, no phase issues, fully transparent final master, radio broadcast quality, concert hall clarity, warm analog depth + razor-sharp digital precision, present lead vocals, wide and airy soundstage, high-fidelity studio production, crisp transients, layered instruments with clear separation, stable tonal balance and loudness
@@ -74,35 +72,35 @@ recreate the original audio exactly as sung and performed, identical vocal timbr
 | Setting | Required value |
 |---|---|
 | **Model** | **V6 Mini — REQUIRED** |
-| **Mode / Operation** | **Cover** |
-| **Sample** | **Entire song** |
+| **Mode / Operation** | **Sample** |
+| **Sample Length** | **Entire song — select the whole song** |
 | **Weirdness** | **0%** |
 | **Style Influence** | **85%** |
 | **Audio Influence** | **85%** |
 | **Max Mode** | **ON** |
 | **Personalize** | **OFF** |
 | **Other options** | **Nothing else enabled** |
-| **Lyrics box** | **`[SND]` direction + preservation instruction** |
+| **Lyrics box** | **Original song lyrics ONLY** |
 | **Style box** | **Complete Audio Quality prompt — the entire prompt above** |
 | **Vocal gender** | **Male/Female as required** |
 
 ### Before you generate
 
 1. **Choose V6 Mini.** Do not choose another V6 model for this workflow.
-2. Choose **Cover** as the operation.
-3. Select the **entire song from Sample**.
+2. Choose **Sample** as the mode/operation.
+3. Set **Sample Length to the entire song** — select the whole song.
 4. Set **Weirdness to 0%**.
 5. Set **Style Influence to 85%**.
 6. Set **Audio Influence to 85%**.
 7. Turn **Max Mode ON**.
 8. Make sure **Personalize is OFF**.
 9. Leave **all other options disabled**.
-10. Put the `[SND]` preservation direction in the **Lyrics box**.
+10. Put **ONLY the original song lyrics** in the **Lyrics box**.
 11. Put the **entire long audio-quality prompt** in the **Style box**.
 12. Select the required **male/female vocal** setting.
 13. Generate the controlled test.
 
-**The placement matters:** `[SND]` goes in **Lyrics**. The long audio-quality prompt goes in **Style**. The model is **V6 Mini**. Max Mode is **ON**. Personalize is **OFF**. Weirdness is **0%**. Style Influence and Audio Influence are **85%**.
+**The placement matters:** Lyrics box = **lyrics only**. Style box = **the complete audio-quality prompt only**. There is **no `[SND]` tag** in this workflow. The mode is **Sample**, and Sample Length is **the entire song**. The model is **V6 Mini**. Max Mode is **ON**. Personalize is **OFF**. Weirdness is **0%**. Style Influence and Audio Influence are **85%**.
 
 ---
 
@@ -116,11 +114,11 @@ Run the controlled rescue setup first. Do not stack additional mastering languag
 
 ### B. Vocal timbre changed
 
-Verify that the entire source was selected, that **V6 Mini** is selected, and that the preservation language remains intact. Compare against the original at matched playback level.
+Verify that the entire song was selected for **Sample Length**, that **V6 Mini** is selected, and that the preservation language remains intact. Compare against the original at matched playback level.
 
 ### C. Instruments or arrangement drifted
 
-The preservation instruction explicitly calls for the original instrument playing style, technique, feel and arrangement. Do not add new arrangement directions during the rescue test.
+The Style-box prompt explicitly calls for the original instrument playing style, technique, feel and arrangement. Do not add new arrangement directions during the rescue test.
 
 ### D. Mud / low-end buildup / harshness
 
@@ -139,7 +137,7 @@ Change one variable at a time **only after the exact controlled setup has been t
 ```text
 BAD V6 RESULT
      ↓
-V6 MINI + COVER + ENTIRE SONG + MAX MODE ON
+V6 MINI + SAMPLE + ENTIRE SONG SAMPLE LENGTH + MAX MODE ON
      ↓
 WEIRDNESS 0% + STYLE 85% + AUDIO 85% + PERSONALIZE OFF
      ↓
@@ -158,7 +156,7 @@ Do not judge a rescue generation only by loudness. Compare vocal identity, dynam
 
 ## 7. IMPORTANT BOUNDARY
 
-This is a **reproducible operational workaround**, not a claim that `[SND]` is an officially documented Suno programming command. Treat it as a controlled prompt/structure technique and judge it by the resulting audio.
+This is a **reproducible operational workaround**. The Lyrics box in this workflow contains only the original lyrics; there is **no `[SND]` tag or special directive required**. Judge the workflow by the resulting audio.
 
 Likewise, descriptive phrases such as “lossless hi-fi,” “24-bit digital clean,” “dynamic range 12dB+,” and “zero clipping” are instructions describing the desired result; they do not guarantee a particular technical export specification from the generation model.
 
@@ -168,6 +166,8 @@ The goal of this workflow is simple:
 PRESERVE THE PERFORMANCE
 +
 PRESERVE THE ARRANGEMENT
++
+USE THE ENTIRE SONG AS THE SAMPLE
 +
 REDUCE UNWANTED AUDIO DAMAGE
 +
